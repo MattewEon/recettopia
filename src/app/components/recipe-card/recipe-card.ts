@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { RecipeCard } from '../../models/recipe.models';
 import { IngredientsGroupComponent } from '../ingredients-group/ingredients-group';
 import { StepsGroupComponent } from '../steps-group/steps-group';
@@ -19,13 +19,6 @@ const LABEL_NAMES: Record<string, string> = {
 export class RecipeCardComponent {
   card = input.required<RecipeCard>();
   cardId = input.required<string>();
-  activeFilter = input<string>('all');
-
-  isVisible = computed(() => {
-    const filter = this.activeFilter();
-    if (filter === 'all') return true;
-    return (this.card().labels ?? []).includes(filter as any);
-  });
 
   labelName(id: string): string {
     return LABEL_NAMES[id] ?? id;

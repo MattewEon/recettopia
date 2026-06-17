@@ -1,15 +1,18 @@
-<div class="section-label" [id]="'section-' + sectionIndex()">{{ section().label }}</div>
+@if (hasVisibleCards()) {
+  <div class="section-label" [id]="'section-' + sectionIndex()">{{ section().label }}</div>
 
-@if (section().intro) {
-  <app-intro [intro]="section().intro!" />
-}
-
-<div class="cards">
-  @for (card of section().cards; track $index) {
-    <app-recipe-card
-      [card]="card"
-      [cardId]="'recipe-' + sectionIndex() + '-' + $index"
-      [activeFilter]="activeFilter()"
-    />
+  @if (section().intro) {
+    <app-intro [intro]="section().intro!" />
   }
-</div>
+
+  <div class="cards">
+    @for (card of section().cards; track $index) {
+      @if (isCardVisible(card)) {
+        <app-recipe-card
+          [card]="card"
+          [cardId]="'recipe-' + sectionIndex() + '-' + $index"
+        />
+      }
+    }
+  </div>
+}
