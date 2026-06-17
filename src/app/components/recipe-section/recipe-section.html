@@ -1,5 +1,5 @@
 @if (hasVisibleCards()) {
-  <div class="section-label" [id]="'section-' + sectionIndex()">{{ section().label }}</div>
+  <a class="section-label" [id]="'section-' + sectionIndex()" [href]="'#section-' + sectionIndex()">{{ section().label }}</a>
   <div class="section-description">{{ section().description }}</div>
 
   @if (section().intro) {

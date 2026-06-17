@@ -1,4 +1,5 @@
 .section-label {
+  display: block;
   max-width: 940px;
   margin: 60px auto 20px;
   font-size: 1.2rem;
@@ -8,6 +9,12 @@
   color: var(--soft);
   border-left: 2px solid var(--gold);
   padding-left: 10px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--caramel);
+    border-left-color: var(--caramel);
+  }
 }
 
 .section-description {

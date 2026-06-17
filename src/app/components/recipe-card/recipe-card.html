@@ -2,7 +2,7 @@
   <div class="card-header">
     <span class="card-emoji">{{ card().emoji }}</span>
     <div class="card-tag">{{ card().tag }}</div>
-    <h2 class="card-title">{{ card().title }}</h2>
+    <h2 class="card-title"><a [href]="'#' + cardId()">{{ card().title }}</a></h2>
     <p class="card-desc">{{ card().desc }}</p>
     @if (card().labels?.length) {
       <div class="card-labels">

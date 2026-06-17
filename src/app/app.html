@@ -7,7 +7,13 @@
 
 <div class="toc-backdrop" (click)="closeToc()"></div>
 
-<app-toc [sections]="sections" [open]="tocOpen()" (linkClicked)="closeToc()" />
+<app-toc
+  [sections]="sections"
+  [open]="tocOpen()"
+  [activeFilters]="activeFilters()"
+  (linkClicked)="closeToc()"
+  (clearFiltersAndGo)="clearFiltersAndGo($event)"
+/>
 
 <header>
   <p class="sub">Carnet de recettes d'Adelle &amp; Mattew</p>

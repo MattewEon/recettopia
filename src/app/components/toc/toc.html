@@ -8,9 +8,11 @@
       <ul class="toc-links">
         @for (card of section.cards; track $index; let ci = $index) {
           <li>
-            <a [href]="'#recipe-' + si + '-' + ci" (click)="linkClicked.emit()">
-              {{ card.emoji }} {{ card.title }}
-            </a>
+            <a
+              [href]="'#recipe-' + si + '-' + ci"
+              [class.filtered]="isCardFiltered(card)"
+              (click)="isCardFiltered(card) ? onFilteredClick($event, 'recipe-' + si + '-' + ci) : linkClicked.emit()"
+            >{{ card.emoji }} {{ card.title }}</a>
           </li>
         }
       </ul>

@@ -33,4 +33,12 @@ export class AppComponent {
   closeToc(): void {
     this.tocOpen.set(false);
   }
+
+  clearFiltersAndGo(fragment: string): void {
+    this.activeFilters.set([]);
+    this.tocOpen.set(false);
+    setTimeout(() => {
+      document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  }
 }
