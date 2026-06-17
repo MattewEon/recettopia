@@ -1,0 +1,14 @@
+<p class="section-title" [style]="group().style ?? null">
+  {{ group().title }}
+  @if (group().subtitle) {
+    <span style="font-weight:300;color:var(--soft)"> {{ group().subtitle }}</span>
+  }
+</p>
+<ul class="ingredients">
+  @for (item of items(); track item.name) {
+    <li>
+      <span class="ing-name">{{ item.name }}</span>
+      <span class="ing-qty">{{ item.qty }}</span>
+    </li>
+  }
+</ul>

@@ -1,0 +1,33 @@
+<div class="card" [class]="'card theme-' + card().theme" [id]="cardId()" [class.hidden]="!isVisible()">
+  <div class="card-header">
+    <span class="card-emoji">{{ card().emoji }}</span>
+    <div class="card-tag">{{ card().tag }}</div>
+    <h2 class="card-title">{{ card().title }}</h2>
+    <p class="card-desc">{{ card().desc }}</p>
+    @if (card().labels?.length) {
+      <div class="card-labels">
+        @for (label of card().labels!; track label) {
+          <span class="card-label" [class]="'card-label label-' + label">{{ labelName(label) }}</span>
+        }
+      </div>
+    }
+  </div>
+  <div class="card-body">
+    @for (group of card().groups; track $index) {
+      @switch (group.type) {
+        @case ('ingredients') {
+          <app-ingredients-group [group]="group" />
+        }
+        @case ('steps') {
+          <app-steps-group [group]="group" />
+        }
+        @case ('variantes') {
+          <app-variantes-group [group]="group" />
+        }
+      }
+    }
+    @for (note of card().notes ?? []; track $index) {
+      <app-note [note]="note" />
+    }
+  </div>
+</div>

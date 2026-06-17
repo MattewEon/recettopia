@@ -1,0 +1,15 @@
+<div class="section-label" [id]="'section-' + sectionIndex()">{{ section().label }}</div>
+
+@if (section().intro) {
+  <app-intro [intro]="section().intro!" />
+}
+
+<div class="cards">
+  @for (card of section().cards; track $index) {
+    <app-recipe-card
+      [card]="card"
+      [cardId]="'recipe-' + sectionIndex() + '-' + $index"
+      [activeFilter]="activeFilter()"
+    />
+  }
+</div>

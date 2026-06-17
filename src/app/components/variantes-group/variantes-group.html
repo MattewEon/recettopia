@@ -1,0 +1,9 @@
+<p class="section-title" [style]="group().style ?? null">{{ group().title }}</p>
+<div class="variantes">
+  @for (item of items(); track item.label) {
+    <div class="variante">
+      <strong>{{ item.label }}</strong>
+      {{ item.text }}
+    </div>
+  }
+</div>

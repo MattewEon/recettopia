@@ -1,0 +1,19 @@
+<nav class="toc">
+  <p class="toc-heading">Sommaire</p>
+  @for (section of sections(); track $index; let si = $index) {
+    <div class="toc-section">
+      <a class="toc-section-label" [href]="'#section-' + si" (click)="linkClicked.emit()">
+        {{ section.label }}
+      </a>
+      <ul class="toc-links">
+        @for (card of section.cards; track $index; let ci = $index) {
+          <li>
+            <a [href]="'#recipe-' + si + '-' + ci" (click)="linkClicked.emit()">
+              {{ card.emoji }} {{ card.title }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</nav>

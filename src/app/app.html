@@ -1,0 +1,24 @@
+<button
+  class="toc-toggle"
+  aria-label="Sommaire"
+  [attr.aria-expanded]="tocOpen()"
+  (click)="toggleToc()"
+>☰</button>
+
+<div class="toc-backdrop" (click)="closeToc()"></div>
+
+<app-toc [sections]="sections" (linkClicked)="closeToc()" />
+
+<header>
+  <p class="sub">Carnet de recettes d'Adelle &amp; Mattew</p>
+  <h1>Mes recettes <em>maison</em></h1>
+  <div class="divider"></div>
+</header>
+
+<app-filter-bar [activeFilter]="activeFilter()" (filterChange)="activeFilter.set($event)" />
+
+<main>
+  @for (section of sections; track $index) {
+    <app-recipe-section [section]="section" [sectionIndex]="$index" [activeFilter]="activeFilter()" />
+  }
+</main>

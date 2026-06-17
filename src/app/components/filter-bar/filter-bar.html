@@ -1,0 +1,10 @@
+<div class="filter-bar">
+  @for (f of filters; track f.id) {
+    <button
+      class="filter-btn"
+      [attr.data-filter]="f.id"
+      [class.active]="activeFilter() === f.id"
+      (click)="filterChange.emit(f.id)"
+    >{{ f.label }}</button>
+  }
+</div>

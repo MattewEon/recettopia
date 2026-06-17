@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #faf6f0;
+  --warm: #f2e8d9;
+  --brown: #4a2e1a;
+  --caramel: #c4773a;
+  --choco: #2d1a0e;
+  --gold: #d4a853;
+  --soft: #8b6f5e;
+  --green: #3a5c2e;
+  --terracotta: #b85c38;
+  --navy: #1a2e4a;
+  --plum: #4a1a3a;
+  --ink: #1a1a2e;
+  --teal: #1a4a4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Layout ── */
+
+app-root {
+  display: block;
+  padding: 60px 20px;
+}
+
+@media (min-width: 1180px) {
+  app-root {
+    margin-left: 260px;
+  }
+}
+
+/* ── Header ── */
+
+header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+header p.sub {
+  font-weight: 300;
+  color: var(--soft);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  color: var(--brown);
+  line-height: 1.1;
+}
+
+header h1 em {
+  color: var(--caramel);
+  font-style: italic;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 20px auto 0;
+}
+
+/* ── Section ── */
+
+.section-label {
+  max-width: 940px;
+  margin: 60px auto 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--soft);
+  border-left: 2px solid var(--gold);
+  padding-left: 10px;
+}
+
+/* ── Cards grid ── */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 36px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(74, 46, 26, 0.08);
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Card header ── */
+
+.card-header {
+  padding: 32px 28px 24px;
+}
+
+.theme-choco    .card-header { background: var(--choco); }
+.theme-caramel  .card-header { background: var(--caramel); }
+.theme-green    .card-header { background: var(--green); }
+.theme-navy     .card-header { background: var(--navy); }
+.theme-terracotta .card-header { background: var(--terracotta); }
+.theme-plum     .card-header { background: var(--plum); }
+.theme-teal     .card-header { background: var(--teal); }
+.theme-ink      .card-header { background: var(--ink); }
+
+.card-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.theme-caramel .card-tag { color: rgba(45, 26, 14, 0.65); }
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  color: white;
+  line-height: 1.2;
+}
+
+.theme-caramel .card-title { color: var(--choco); }
+
+.card-desc {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 300;
+}
+
+.theme-caramel .card-desc { color: rgba(45, 26, 14, 0.55); }
+
+/* ── Card body ── */
+
+.card-body {
+  padding: 24px 28px 32px;
+}
+
+.section-title {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--soft);
+  margin-bottom: 12px;
+}
+
+/* ── Ingredients ── */
+
+.ingredients {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.ingredients li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--warm);
+  font-size: 0.86rem;
+  color: var(--brown);
+}
+
+.ingredients li:last-child { border-bottom: none; }
+
+.ing-name { font-weight: 400; }
+
+.ing-qty {
+  font-weight: 500;
+  color: var(--caramel);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+/* ── Variantes ── */
+
+.variantes { margin-bottom: 24px; }
+
+.variante {
+  padding: 10px 14px;
+  background: var(--warm);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-size: 0.84rem;
+  color: var(--brown);
+}
+
+.variante strong {
+  color: var(--caramel);
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+/* ── Steps ── */
+
+.step {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+.step-num {
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--warm);
+  color: var(--caramel);
+  font-weight: 700;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-text {
+  font-size: 0.86rem;
+  color: var(--brown);
+  line-height: 1.6;
+}
+
+.step-label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--caramel);
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Labels sur les cartes ── */
+
+.card-labels {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card-label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ── Barre de filtres ── */
+
+.filter-bar {
+  max-width: 940px;
+  margin: 0 auto 36px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  background: white;
+  box-shadow: 0 1px 4px rgba(74, 46, 26, 0.1);
+}
+
+.filter-btn[data-filter="all"]          { color: var(--brown); }
+.filter-btn[data-filter="all"].active   { background: var(--brown); color: white; }
+
+.filter-btn[data-filter="vegetarien"]         { color: var(--green); }
+.filter-btn[data-filter="vegetarien"].active  { background: var(--green); color: white; }
+
+.filter-btn[data-filter="sans-gluten"]        { color: var(--caramel); }
+.filter-btn[data-filter="sans-gluten"].active { background: var(--caramel); color: white; }
+
+.filter-btn[data-filter="sans-lactose"]        { color: var(--navy); }
+.filter-btn[data-filter="sans-lactose"].active { background: var(--navy); color: white; }
+
+.card.hidden { display: none; }
+
+/* ── Notes ── */
+
+.note {
+  margin-top: 20px;
+  padding: 14px;
+  background: var(--warm);
+  border-left: 3px solid var(--gold);
+  border-radius: 2px;
+  font-size: 0.78rem;
+  color: var(--soft);
+  line-height: 1.6;
+}
+
+.note strong { color: var(--brown); }
+
+/* ── TOC toggle button (mobile) ── */
+
+.toc-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 110;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--brown);
+  color: var(--cream);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ── TOC backdrop ── */
+
+.toc-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 46, 0.4);
+  z-index: 99;
+}
+
+/* ── TOC sidebar ── */
+
+.toc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  max-width: 80vw;
+  height: 100vh;
+  overflow-y: auto;
+  background: white;
+  border-right: 1px solid var(--warm);
+  padding: 76px 20px 32px;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  z-index: 100;
+}
+
+.toc-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--brown);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+
+.toc-section { margin-bottom: 18px; }
+
+.toc-section-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--soft);
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.toc-section-label:hover { color: var(--caramel); }
+
+.toc-links { list-style: none; }
+
+.toc-links a {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--brown);
+  text-decoration: none;
+  padding: 4px 8px;
+  margin: 1px 0;
+  border-radius: 3px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.toc-links a:hover {
+  background: var(--warm);
+  color: var(--caramel);
+}
+
+/* ── TOC open state (classe sur app-root via host binding) ── */
+
+app-root.toc-open .toc {
+  transform: translateX(0);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+}
+
+app-root.toc-open .toc-backdrop { display: block; }
+
+/* ── Large screen: TOC always visible ── */
+
+@media (min-width: 1180px) {
+  .toc {
+    transform: translateX(0);
+    padding-top: 32px;
+    box-shadow: none;
+  }
+
+  .toc-toggle,
+  .toc-backdrop {
+    display: none;
+  }
+}
