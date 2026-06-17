@@ -8,10 +8,7 @@
   <div class="cards">
     @for (card of section().cards; track $index) {
       @if (isCardVisible(card)) {
-        <app-recipe-card
-          [card]="card"
-          [cardId]="'recipe-' + sectionIndex() + '-' + $index"
-        />
+        <app-recipe-card [card]="card" [cardId]="'recipe-' + sectionIndex() + '-' + $index" />
       }
     }
   </div>

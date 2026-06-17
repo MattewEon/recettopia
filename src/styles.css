@@ -331,8 +331,6 @@ header h1 em {
 .filter-btn[data-filter="sans-lactose"]        { color: var(--navy); }
 .filter-btn[data-filter="sans-lactose"].active { background: var(--navy); color: white; }
 
-.card.hidden { display: none; }
-
 /* ── Notes ── */
 
 .note {

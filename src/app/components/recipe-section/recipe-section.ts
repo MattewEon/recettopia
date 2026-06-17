@@ -11,15 +11,15 @@ import { IntroComponent } from '../intro/intro';
 export class RecipeSectionComponent {
   section = input.required<RecipeSection>();
   sectionIndex = input.required<number>();
-  activeFilter = input<string>('all');
+  activeFilters = input<string[]>([]);
 
-  hasVisibleCards = computed(() => {
-    const filter = this.activeFilter();
-    if (filter === 'all') return true;
-    return this.section().cards.some(card => this.isCardVisible(card, filter));
-  });
+  hasVisibleCards = computed(() =>
+    this.section().cards.some(card => this.isCardVisible(card))
+  );
 
-  isCardVisible(card: RecipeCard, filter = this.activeFilter()): boolean {
-    return filter === 'all' || (card.labels ?? []).includes(filter as Label);
+  isCardVisible(card: RecipeCard): boolean {
+    const filters = this.activeFilters();
+    if (filters.length === 0) return true;
+    return filters.every(f => (card.labels ?? []).includes(f as Label));
   }
 }

@@ -1,10 +1,16 @@
 <div class="filter-bar">
+  <button
+    class="filter-btn"
+    [attr.data-filter]="'all'"
+    [class.active]="activeFilters().length === 0"
+    (click)="filterToggle.emit('all')"
+  >Toutes</button>
   @for (f of filters; track f.id) {
     <button
       class="filter-btn"
       [attr.data-filter]="f.id"
-      [class.active]="activeFilter() === f.id"
-      (click)="filterChange.emit(f.id)"
+      [class.active]="activeFilters().includes(f.id)"
+      (click)="filterToggle.emit(f.id)"
     >{{ f.label }}</button>
   }
 </div>

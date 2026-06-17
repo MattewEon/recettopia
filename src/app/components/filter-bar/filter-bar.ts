@@ -10,11 +10,10 @@ export interface FilterOption {
   templateUrl: './filter-bar.html',
 })
 export class FilterBarComponent {
-  activeFilter = input.required<string>();
-  filterChange = output<string>();
+  activeFilters = input.required<string[]>();
+  filterToggle = output<string>();
 
   readonly filters: FilterOption[] = [
-    { id: 'all', label: 'Toutes' },
     { id: 'vegetarien', label: '🌿 Végétarien' },
     { id: 'sans-gluten', label: '🌾 Sans gluten' },
     { id: 'sans-lactose', label: '🥛 Sans lactose' },

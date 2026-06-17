@@ -14,7 +14,17 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar';
 export class AppComponent {
   readonly sections = RECIPES_DATA.sections;
   tocOpen = signal(false);
-  activeFilter = signal('all');
+  activeFilters = signal<string[]>([]);
+
+  toggleFilter(id: string): void {
+    if (id === 'all') {
+      this.activeFilters.set([]);
+      return;
+    }
+    this.activeFilters.update(current =>
+      current.includes(id) ? current.filter(f => f !== id) : [...current, id]
+    );
+  }
 
   toggleToc(): void {
     this.tocOpen.update(v => !v);

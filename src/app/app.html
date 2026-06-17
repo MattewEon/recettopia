@@ -15,10 +15,10 @@
   <div class="divider"></div>
 </header>
 
-<app-filter-bar [activeFilter]="activeFilter()" (filterChange)="activeFilter.set($event)" />
+<app-filter-bar [activeFilters]="activeFilters()" (filterToggle)="toggleFilter($event)" />
 
 <main>
   @for (section of sections; track $index) {
-    <app-recipe-section [section]="section" [sectionIndex]="$index" [activeFilter]="activeFilter()" />
+    <app-recipe-section [section]="section" [sectionIndex]="$index" [activeFilters]="activeFilters()" />
   }
 </main>
