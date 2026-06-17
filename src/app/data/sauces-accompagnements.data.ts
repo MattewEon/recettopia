@@ -1,5 +1,67 @@
 import { RecipeCard, RecipeSection } from '../models/recipe.models';
 
+const BOUILLON_LEGUMES_MAISON: RecipeCard = {
+  theme: 'gold',
+  emoji: '🥕',
+  tag: 'Casserole · 45–60 min · Pour 1 grand volume',
+  title: 'Bouillon de légumes maison',
+  desc: 'Simple · Aromatique · Base cuisine maison · Sans additif',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Poireaux (blancs)', qty: '2' },
+        { name: 'Carottes', qty: '3' },
+        { name: 'Oignon', qty: '1' },
+        { name: 'Bouquet garni', qty: '1' },
+        { name: 'Sel', qty: 'q.s.' },
+        { name: 'Poivre', qty: 'q.s.' },
+        { name: 'Eau', qty: 'environ 1,5 à 2 L' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Légumes',
+          text: 'Éplucher et couper grossièrement les carottes, l’oignon et les poireaux.'
+        },
+        {
+          label: 'Cuisson',
+          text: 'Mettre tous les légumes dans une grande casserole avec l’eau et le bouquet garni.'
+        },
+        {
+          label: 'Mijotage',
+          text: 'Porter à ébullition puis laisser frémir 45 à 60 minutes.'
+        },
+        {
+          label: 'Assaisonnement',
+          text: 'Ajouter sel et poivre en fin de cuisson selon le goût.'
+        },
+        {
+          label: 'Filtrage',
+          text: 'Filtrer le bouillon et récupérer le liquide.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+      parts: [
+        {
+          label: 'Utilisation :',
+          text: 'Base idéale pour risottos, sauces, soupes ou blanquettes végétales.'
+        },
+        {
+          label: 'Conservation :',
+          text: 'Se garde 3 à 4 jours au réfrigérateur ou peut être congelé en portions.'
+        }
+      ]
+    }
+  ]
+};
 const PESTO_TOFU: RecipeCard = {
   theme: 'green',
   emoji: '🌿',
@@ -35,7 +97,65 @@ const PESTO_TOFU: RecipeCard = {
     },
   ],
 };
-
+const TARTINADE_TOFU_BASILIC_OLIVES: RecipeCard = {
+  theme: 'green',
+  emoji: '🫒',
+  tag: 'Mixeur · Sans cuisson · 10 min · Pour 1 bol',
+  title: 'Tartinade tofu, basilic & olives',
+  desc: 'Crémeuse · Méditerranéenne · Riche en protéines · Sans lactose',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Tofu nature', qty: '200 g' },
+        { name: 'Olives vertes ou noires dénoyautées', qty: '80 à 100 g' },
+        { name: 'Amandes', qty: '30 g' },
+        { name: 'Ail confit', qty: '2 à 4 gousses' },
+        { name: 'Basilic frais', qty: '1 poignée' },
+        { name: "Huile d'olive", qty: '1 à 2 càs' },
+        { name: 'Jus de citron', qty: '1 càs' },
+        { name: 'Poivre', qty: 'q.s.' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Mixage',
+          text: 'Placer le tofu, les olives, les amandes, l’ail confit, le basilic, l’huile d’olive et le jus de citron dans un mixeur.'
+        },
+        {
+          label: 'Texture',
+          text: 'Mixer jusqu’à obtenir une texture homogène. Ajouter un peu d’huile d’olive si nécessaire pour assouplir la préparation.'
+        },
+        {
+          label: 'Assaisonnement',
+          text: 'Goûter puis ajuster en poivre, citron ou basilic selon les préférences.'
+        },
+        {
+          label: 'Service',
+          text: 'Servir frais sur du pain grillé, des crackers ou avec des bâtonnets de légumes.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+      parts: [
+        {
+          label: 'Astuce :',
+          text: 'Les olives apportent déjà beaucoup de sel ; goûter avant d’en ajouter.'
+        },
+        {
+          label: 'Conservation :',
+          text: 'Se conserve 3 à 4 jours au réfrigérateur dans une boîte hermétique.'
+        }
+      ]
+    }
+  ]
+};
 const AJITSUKE_TAMAGO: RecipeCard = {
   theme: 'ink',
   emoji: '🥚',
@@ -103,5 +223,10 @@ const AJITSUKE_TAMAGO: RecipeCard = {
 
 export const SAUCES_ACCOMPAGNEMENTS: RecipeSection = {
   label: 'Sauces & accompagnements',
-  cards: [PESTO_TOFU, AJITSUKE_TAMAGO],
+  cards: [
+    BOUILLON_LEGUMES_MAISON,
+    PESTO_TOFU,
+    TARTINADE_TOFU_BASILIC_OLIVES,
+    AJITSUKE_TAMAGO,
+  ],
 };

@@ -1,5 +1,5 @@
-export type Theme = 'choco' | 'caramel' | 'green' | 'navy' | 'terracotta' | 'plum' | 'teal' | 'ink';
-export type Label = 'vegetarien' | 'sans-gluten' | 'sans-lactose';
+export type Theme = 'choco' | 'caramel' | 'green' | 'navy' | 'terracotta' | 'plum' | 'teal' | 'ink' | 'gold' ;
+export type Label = 'vegetarien' | 'sans-gluten' | 'sans-lactose' | 'lactose-reduit';
 
 export interface IngredientItem {
   name: string;
@@ -59,6 +59,7 @@ export interface Intro {
 export interface RecipeSection {
   label: string;
   intro?: Intro;
+  description?: string;
   cards: RecipeCard[];
 }
 

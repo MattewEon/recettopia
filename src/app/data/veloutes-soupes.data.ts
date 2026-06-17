@@ -243,6 +243,7 @@ const VELOUTE_POIVRON_CHORIZO: RecipeCard = {
 
 export const VELOUTES_SOUPES: RecipeSection = {
   label: 'Veloutés & soupes',
+  description: 'Du velouté fumant au gaspacho rafraîchissant, chaque saison trouve son réconfort dans un joli bol empli de saveurs !',
   intro: {
     title: "✦ Les règles d'or du velouté",
     items: [

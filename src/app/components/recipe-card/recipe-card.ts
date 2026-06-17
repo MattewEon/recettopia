@@ -9,6 +9,7 @@ const LABEL_NAMES: Record<string, string> = {
   'vegetarien': '🌿 Végétarien',
   'sans-gluten': '🌾 Sans gluten',
   'sans-lactose': '🥛 Sans lactose',
+  'lactose-reduit': '🥛 Faible en lactose',
 };
 
 @Component({

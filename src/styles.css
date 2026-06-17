@@ -94,6 +94,15 @@ header h1 em {
   padding-left: 10px;
 }
 
+.section-description {
+  max-width: 940px;
+  margin: -15px auto 20px;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: var(--caramel);
+}
+
 /* ── Cards grid ── */
 
 .cards {
@@ -131,6 +140,7 @@ header h1 em {
 .theme-plum     .card-header { background: var(--plum); }
 .theme-teal     .card-header { background: var(--teal); }
 .theme-ink      .card-header { background: var(--ink); }
+.theme-gold      .card-header { background: var(--gold); }
 
 .card-emoji {
   font-size: 2.2rem;
