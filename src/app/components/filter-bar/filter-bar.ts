@@ -17,5 +17,6 @@ export class FilterBarComponent {
     { id: 'vegetarien', label: '🌿 Végétarien' },
     { id: 'sans-gluten', label: '🌾 Sans gluten' },
     { id: 'sans-lactose', label: '🥛 Sans lactose' },
+    { id: 'lactose-reduit', label: '🥛 Faible en lactose' },
   ];
 }
