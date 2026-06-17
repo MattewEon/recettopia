@@ -40,12 +40,8 @@ const VELOUTE_POTIMARRON: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Variante :',
-          text: 'Curry + lait de coco se marient très bien avec le potimarron.',
-        },
-      ],
+      label: 'Variante :',
+      text: 'Curry + lait de coco se marient très bien avec le potimarron.',
     },
   ],
 };
@@ -160,12 +156,8 @@ const VELOUTE_COURGETTES: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Le basilic frais fait VRAIMENT la différence. Se déguste chaud ou froid selon la saison.',
-        },
-      ],
+      label: 'Astuce :',
+      text: 'Le basilic frais fait VRAIMENT la différence. Se déguste chaud ou froid selon la saison.',
     },
   ],
 };

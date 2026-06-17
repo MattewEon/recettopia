@@ -87,20 +87,16 @@ const PAIN_LENTILLES_CORAIL: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Nutrition :',
-          text: 'Environ 105 kcal, 7 g de protéines, 12 g de glucides et 3 g de lipides par tranche (sur une base de 10 tranches).'
-        },
-        {
-          label: 'Astuce :',
-          text: 'Ajouter des herbes, des épices ou des graines pour varier les saveurs.'
-        },
-        {
-          label: 'Apéro original :',
-          text: 'Servir en toast pour un apéro sans gluten !'
-        }
-      ]
+      label: 'Nutrition :',
+      text: 'Environ 105 kcal, 7 g de protéines, 12 g de glucides et 3 g de lipides par tranche (sur une base de 10 tranches).'
+    },
+    {
+      label: 'Astuce :',
+      text: 'Ajouter des herbes, des épices ou des graines pour varier les saveurs.'
+    },
+    {
+      label: 'Apéro original :',
+      text: 'Servir en toast pour un apéro sans gluten !'
     }
   ]
 };
@@ -150,25 +146,18 @@ const SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Twist :',
-          text: "Ajouter un filet de miel sur le chèvre, remplacer l’huile d’olive par de l’huile de sésame grillé, ou ajouter une touche de piment."
-        }],
+      label: 'Twist :',
+      text: "Ajouter un filet de miel sur le chèvre, remplacer l’huile d’olive par de l’huile de sésame grillé, ou ajouter une touche de piment."
     }, {
-      parts: [
-        {
-          label: 'Astuce clé :',
-          text: "Le dégorgeage du concombre est essentiel pour éviter une salade trop aqueuse."
-        }
-      ]
+      label: 'Astuce clé :',
+      text: "Le dégorgeage du concombre est essentiel pour éviter une salade trop aqueuse."
     }
   ]
 };
 
 export const APERO_BISCUITS: RecipeSection = {
   label: 'Apéro & biscuits salés',
-  description: ' "Avant les grands plats viennent les petites bouchées, celles qui ouvrent l\'appétit et le coeur..." ',
+  description: ' "Avant les grands plats viennent les petites bouchées, celles qui ouvrent l\'appétit et le cœur..." ',
   cards: [
     CAKE_SALE,
     SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME,

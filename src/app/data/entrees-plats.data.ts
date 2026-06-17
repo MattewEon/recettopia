@@ -48,7 +48,10 @@ const ARTICHAUTS_VAPEUR: RecipeCard = {
     },
   ],
   notes: [
-    {parts: [{label: 'Astuce :', text: "Prêts quand une feuille s'arrache facilement."}]},
+    {
+      label: 'Astuce :',
+      text: "Prêts quand une feuille s'arrache facilement."
+    },
   ],
 };
 const BRUSCHETTA: RecipeCard = {
@@ -144,12 +147,8 @@ const GAUFRES_PATATE_DOUCE_CURRY: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Servir avec une sauce yaourt citronné ou une salade pour une version complète.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Servir avec une sauce yaourt citronné ou une salade pour une version complète.'
     }
   ]
 };
@@ -208,16 +207,12 @@ const TARTE_CROUSTILLANTE_THON_CONCOMBRE: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce clé :',
-          text: 'Le concombre dégorgé au sel évite que la tarte rende de l’eau et ramollisse.'
-        },
-        {
-          label: 'Variante :',
-          text: 'Le fromage à tartiner peut être remplacé par du chèvre frais pour une version plus parfumée.'
-        }
-      ]
+      label: 'Astuce clé :',
+      text: 'Le concombre dégorgé au sel évite que la tarte rende de l’eau et ramollisse.'
+    },
+    {
+      label: 'Variante :',
+      text: 'Le fromage à tartiner peut être remplacé par du chèvre frais pour une version plus parfumée.'
     }
   ]
 };
@@ -323,19 +318,11 @@ const FLAN_POIREAU_SAUMON: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Conservation :',
-          text: '2 jours maximum au réfrigérateur.'
-        }
-      ]
+      label: 'Conservation :',
+      text: '2 jours maximum au réfrigérateur.'
     }, {
-    parts: [
-        {
-          label: 'Astuce texture :',
-          text: 'Ajouter un 5ᵉ œuf pour un flan plus ferme.'
-        }
-      ]
+      label: 'Astuce texture :',
+      text: 'Ajouter un 5ᵉ œuf pour un flan plus ferme.'
     }
   ]
 };
@@ -398,16 +385,12 @@ const FLAN_THON_TOMATES_ORIGAN: RecipeCard =   {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Point clé :',
-          text: "Bien réduire l’eau des tomates est essentiel pour éviter un flan trop humide."
-        },
-        {
-          label: 'Astuce :',
-          text: "Le basilic frais peut remplacer l’origan pour une version plus douce et estivale."
-        }
-      ]
+      label: 'Point clé :',
+      text: "Bien réduire l’eau des tomates est essentiel pour éviter un flan trop humide."
+    },
+    {
+      label: 'Astuce :',
+      text: "Le basilic frais peut remplacer l’origan pour une version plus douce et estivale."
     }
   ]
 };
@@ -464,12 +447,8 @@ const FLAN_EPINARDS_CHEVRE: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Point clé :',
-          text: "L’essorage des épinards est indispensable : trop humides, le flan ne prend pas correctement."
-        }
-      ]
+      label: 'Point clé :',
+      text: "L’essorage des épinards est indispensable : trop humides, le flan ne prend pas correctement."
     }
   ]
 };
@@ -527,16 +506,12 @@ const FLAN_PATATE_DOUCE_ROQUEFORT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: "Le thym et le romarin renforcent très bien la douceur de la patate douce."
-        },
-        {
-          label: 'Remarque :',
-          text: "Sans gluten naturellement ; sans lactose uniquement si on remplace le Roquefort."
-        }
-      ]
+      label: 'Astuce :',
+      text: "Le thym et le romarin renforcent très bien la douceur de la patate douce."
+    },
+    {
+      label: 'Remarque :',
+      text: "Sans gluten naturellement ; sans lactose uniquement si on remplace le Roquefort."
     }
   ]
 };
@@ -635,20 +610,16 @@ const CHILI_CON_SIN_CARNE_EASY: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Version végétarienne :',
-          text: 'Utiliser des merguez végétales.'
-        },
-        {
-          label: 'Version carnée :',
-          text: 'Remplacer par du bœuf haché.'
-        },
-        {
-          label: 'Et ZOU !',
-          text: 'Recette express, nourrissante et inratable.'
-        }
-      ]
+      label: 'Version végétarienne :',
+      text: 'Utiliser des merguez végétales.'
+    },
+    {
+      label: 'Version carnée :',
+      text: 'Remplacer par du bœuf haché.'
+    },
+    {
+      label: 'Et ZOU !',
+      text: 'Recette express, nourrissante et inratable.'
     }
   ]
 };
@@ -703,16 +674,12 @@ const BLANQUETTE_VEGAN_CHAMPIGNONS: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Esprit du plat :',
-          text: 'Une blanquette revisitée sans viande ni produits laitiers, mais avec une texture très crémeuse.'
-        },
-        {
-          label: 'Astuce :',
-          text: 'Bien faire revenir les champignons pour concentrer les saveurs et éviter l’eau dans la sauce.'
-        }
-      ]
+      label: 'Esprit du plat :',
+      text: 'Une blanquette revisitée sans viande ni produits laitiers, mais avec une texture très crémeuse.'
+    },
+    {
+      label: 'Astuce :',
+      text: 'Bien faire revenir les champignons pour concentrer les saveurs et éviter l’eau dans la sauce.'
     }
   ]
 };
@@ -885,16 +852,12 @@ const CURRY_HARICOTS_ROUGES_COCO: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Service :',
-          text: 'Servir avec du quinoa, du riz ou d’autres céréales.'
-        },
-        {
-          label: 'Astuce :',
-          text: 'Le mix partiel donne une texture plus crémeuse sans perdre les morceaux.'
-        }
-      ]
+      label: 'Service :',
+      text: 'Servir avec du quinoa, du riz ou d’autres céréales.'
+    },
+    {
+      label: 'Astuce :',
+      text: 'Le mix partiel donne une texture plus crémeuse sans perdre les morceaux.'
     }
   ]
 };
@@ -1099,20 +1062,16 @@ const GRATIN_DAUPHINOIS_RESTES_RACLETTE: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Concept :',
-          text: 'Recette anti-gaspi pour transformer les restes (notamment raclette) en gratin complet.'
-        },
-        {
-          label: 'Astuce texture :',
-          text: 'La crème entre chaque couche évite le côté sec et rend le gratin ultra fondant.'
-        },
-        {
-          label: 'Conservation :',
-          text: 'Une fois cuit, se conserve au frais et peut être congelé puis réchauffé au four.'
-        }
-      ]
+      label: 'Concept :',
+      text: 'Recette anti-gaspi pour transformer les restes (notamment raclette) en gratin complet.'
+    },
+    {
+      label: 'Astuce texture :',
+      text: 'La crème entre chaque couche évite le côté sec et rend le gratin ultra fondant.'
+    },
+    {
+      label: 'Conservation :',
+      text: 'Une fois cuit, se conserve au frais et peut être congelé puis réchauffé au four.'
     }
   ]
 };
@@ -1197,20 +1156,12 @@ const PATE_PIZZA: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce croustillante :',
-          text: "Badigeonner légèrement les bords avec un peu d'huile d'olive avant d'enfourner.",
-        },
-      ],
+      label: 'Astuce croustillante :',
+      text: "Badigeonner légèrement les bords avec un peu d'huile d'olive avant d'enfourner.",
     },
     {
-      parts: [
-        {
-          label: 'Note :',
-          text: 'Labels valables pour la pâte seule — les garnitures peuvent contenir fromage ou viande selon les goûts.',
-        },
-      ],
+      label: 'Note :',
+      text: 'Labels valables pour la pâte seule — les garnitures peuvent contenir fromage ou viande selon les goûts.',
     },
   ],
 };
@@ -1226,11 +1177,11 @@ const GNOCCHIS_MAISON: RecipeCard = {
       type: 'ingredients',
       title: 'Ingrédients',
       items: [
-        {name: 'Pommes de terre (type bintje)', qty: '150 g'},
-        {name: 'Farine (ajuster selon texture)', qty: '~100 g'},
-        {name: 'Œuf', qty: '½'},
-        {name: 'Sel', qty: 'q.s.'},
-        {name: 'Muscade ou parmesan (optionnel)', qty: 'q.s.'},
+        { name: 'Pommes de terre (type bintje)', qty: '150 g' },
+        { name: 'Farine (ajuster selon texture)', qty: '~100 g' },
+        { name: 'Œuf', qty: '½' },
+        { name: 'Sel', qty: 'q.s.' },
+        { name: 'Muscade ou parmesan (optionnel)', qty: 'q.s.' },
       ],
     },
     {
@@ -1262,17 +1213,11 @@ const GNOCCHIS_MAISON: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {label: 'Attention :', text: 'Ne pas trop pétrir — sinon les gnocchis seront durs.'},
-      ],
-    },
-    {
-      parts: [
-        {
-          label: 'Idées de sauce :',
-          text: "Gorgonzola au mascarpone, fondu avec un peu d'eau de cuisson + topping noix concassées ou lardons grillés.",
-        },
-      ],
+      label: 'Attention :',
+      text: 'Ne pas trop pétrir — sinon les gnocchis seront durs.'
+    }, {
+      label: 'Idées de sauce :',
+      text: "Gorgonzola au mascarpone, fondu avec un peu d'eau de cuisson + topping noix concassées ou lardons grillés.",
     },
   ],
 };

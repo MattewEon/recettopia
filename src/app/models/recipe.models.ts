@@ -32,7 +32,8 @@ export interface NotePart {
 }
 
 export interface RecipeNote {
-  parts: NotePart[];
+  label: string;
+  text: string;
 }
 
 export interface RecipeCard {

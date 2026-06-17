@@ -49,16 +49,12 @@ const BOUILLON_LEGUMES_MAISON: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Utilisation :',
-          text: 'Base idéale pour risottos, sauces, soupes ou blanquettes végétales.'
-        },
-        {
-          label: 'Conservation :',
-          text: 'Se garde 3 à 4 jours au réfrigérateur ou peut être congelé en portions.'
-        }
-      ]
+      label: 'Utilisation :',
+      text: 'Base idéale pour risottos, sauces, soupes ou blanquettes végétales.'
+    },
+    {
+      label: 'Conservation :',
+      text: 'Se garde 3 à 4 jours au réfrigérateur ou peut être congelé en portions.'
     }
   ]
 };
@@ -143,16 +139,12 @@ const TARTINADE_TOFU_BASILIC_OLIVES: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Les olives apportent déjà beaucoup de sel ; goûter avant d’en ajouter.'
-        },
-        {
-          label: 'Conservation :',
-          text: 'Se conserve 3 à 4 jours au réfrigérateur dans une boîte hermétique.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Les olives apportent déjà beaucoup de sel ; goûter avant d’en ajouter.'
+    },
+    {
+      label: 'Conservation :',
+      text: 'Se conserve 3 à 4 jours au réfrigérateur dans une boîte hermétique.'
     }
   ]
 };
@@ -203,20 +195,12 @@ const AJITSUKE_TAMAGO: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce contenant :',
-          text: 'Prévoir un récipient suffisamment haut pour que les œufs soient bien immergés dans la marinade.',
-        },
-      ],
+      label: 'Astuce contenant :',
+      text: 'Prévoir un récipient suffisamment haut pour que les œufs soient bien immergés dans la marinade.',
     },
     {
-      parts: [
-        {
-          label: 'Sans gluten :',
-          text: 'Remplacer la sauce soja par du tamari pour une version sans gluten.',
-        },
-      ],
+      label: 'Sans gluten :',
+      text: 'Remplacer la sauce soja par du tamari pour une version sans gluten.',
     },
   ],
 };

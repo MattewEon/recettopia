@@ -1,6 +1,3 @@
 <div class="note">
-  @for (part of note().parts; track part.label; let i = $index) {
-    @if (i > 0) { · }
-    <strong>{{ part.label }}</strong> {{ part.text }}
-  }
+  <strong>{{ note().label }}</strong> {{ note().text }}
 </div>

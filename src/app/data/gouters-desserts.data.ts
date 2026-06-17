@@ -38,12 +38,8 @@ const OURSONS_CHOCOLAT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Pas besoin de laisser reposer la pâte. Enfourner directement !',
-        },
-      ],
+      label: 'Astuce :',
+      text: 'Pas besoin de laisser reposer la pâte. Enfourner directement !',
     },
   ],
 };
@@ -84,12 +80,8 @@ const GAUFRES_CHOCOLAT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Utiliser une margarine végétale pour garder la recette sans lactose.',
-        },
-      ],
+      label: 'Astuce :',
+      text: 'Utiliser une margarine végétale pour garder la recette sans lactose.',
     },
   ],
 };
@@ -145,11 +137,12 @@ const BISCUITS_ORANGE: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        { label: 'Conservation :', text: '5–6 jours en boîte hermétique, se congèle très bien.' },
-        { label: 'Variante :', text: 'une pincée de cannelle ou cardamome se marie parfaitement.' },
-      ],
+      label: 'Conservation :',
+      text: '5–6 jours en boîte hermétique, se congèle très bien.'
     },
+    {
+      label: 'Variante :',
+      text: 'une pincée de cannelle ou cardamome se marie parfaitement.' },
   ],
 };
 const BISCUITS_NOISETTE_COMPOTE_CHOCOLAT: RecipeCard = {
@@ -198,20 +191,16 @@ const BISCUITS_NOISETTE_COMPOTE_CHOCOLAT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Texture :',
-          text: 'Croustillant à l’extérieur, fondant à l’intérieur.'
-        },
-        {
-          label: 'Astuce :',
-          text: 'Varier les chocolats (orange, dessert, etc.) pour changer le parfum.'
-        },
-        {
-          label: 'Principe :',
-          text: 'Recette minimaliste, 3 ingrédients de base + toppings gourmands.'
-        }
-      ]
+      label: 'Texture :',
+      text: 'Croustillant à l’extérieur, fondant à l’intérieur.'
+    },
+    {
+      label: 'Astuce :',
+      text: 'Varier les chocolats (orange, dessert, etc.) pour changer le parfum.'
+    },
+    {
+      label: 'Principe :',
+      text: 'Recette minimaliste, 3 ingrédients de base + toppings gourmands.'
     }
   ]
 };
@@ -270,12 +259,8 @@ const CLAFOUTIS_NECTARINES: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Un filet de jus de citron sur les nectarines avant cuisson relève naturellement le goût du fruit.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Un filet de jus de citron sur les nectarines avant cuisson relève naturellement le goût du fruit.'
     }
   ]
 };
@@ -331,16 +316,12 @@ const TARTE_MIRABELLES_SPECULOOS: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Le mélange spéculoos-poudre d’amande absorbe le jus des mirabelles et évite une tarte détrempée.'
-        },
-        {
-          label: 'Variante :',
-          text: 'Fonctionne également avec des quetsches, des prunes ou des abricots.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Le mélange spéculoos-poudre d’amande absorbe le jus des mirabelles et évite une tarte détrempée.'
+    },
+    {
+      label: 'Variante :',
+      text: 'Fonctionne également avec des quetsches, des prunes ou des abricots.'
     }
   ]
 };
@@ -394,12 +375,8 @@ const MUFFINS_NUTELLA: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Sans lactose :',
-          text: 'Remplacer le Nutella par de la confiture ou une pâte à tartiner végétalienne.',
-        },
-      ],
+      label: 'Sans lactose :',
+      text: 'Remplacer le Nutella par de la confiture ou une pâte à tartiner végétalienne.',
     },
   ],
 };
@@ -458,16 +435,12 @@ const SNICKERS_MAISON_BANANE_CACAHUETE: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Utiliser un chocolat noir à 70 % minimum pour un résultat proche d’un vrai Snickers.'
-        },
-        {
-          label: 'Variante :',
-          text: 'Remplacer les cacahuètes par des amandes ou des noisettes concassées.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Utiliser un chocolat noir à 70 % minimum pour un résultat proche d’un vrai Snickers.'
+    },
+    {
+      label: 'Variante :',
+      text: 'Remplacer les cacahuètes par des amandes ou des noisettes concassées.'
     }
   ]
 };
@@ -559,12 +532,8 @@ const MARBRE_CHOCOLAT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Sans lactose :',
-          text: 'Le yaourt de brebis est généralement mieux toléré que le lait de vache par les personnes sensibles au lactose.',
-        },
-      ],
+      label: 'Sans lactose :',
+      text: 'Le yaourt de brebis est généralement mieux toléré que le lait de vache par les personnes sensibles au lactose.',
     },
   ],
 };
@@ -625,16 +594,12 @@ const GATEAU_HARICOT_ROUGE_CHOCOLAT: RecipeCard = {
   ],
   notes: [
     {
-      parts: [
-        {
-          label: 'Astuce :',
-          text: 'Personne ne devine la présence des haricots rouges ; ils apportent surtout du moelleux !'
-        },
-        {
-          label: 'Variante :',
-          text: 'Ajouter des pépites de caramel ou quelques noix concassées pour plus de gourmandise.'
-        }
-      ]
+      label: 'Astuce :',
+      text: 'Personne ne devine la présence des haricots rouges ; ils apportent surtout du moelleux !'
+    },
+    {
+      label: 'Variante :',
+      text: 'Ajouter des pépites de caramel ou quelques noix concassées pour plus de gourmandise.'
     }
   ]
 };
