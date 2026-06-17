@@ -4,6 +4,7 @@ import { Group, StepItem } from '../../models/recipe.models';
 @Component({
   selector: 'app-steps-group',
   templateUrl: './steps-group.html',
+  styleUrl: './steps-group.scss',
 })
 export class StepsGroupComponent {
   group = input.required<Group>();

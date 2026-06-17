@@ -6,6 +6,7 @@ import { IntroComponent } from '../intro/intro';
 @Component({
   selector: 'app-recipe-section',
   templateUrl: './recipe-section.html',
+  styleUrl: './recipe-section.scss',
   imports: [RecipeCardComponent, IntroComponent],
 })
 export class RecipeSectionComponent {

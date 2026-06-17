@@ -1,0 +1,66 @@
+.filter-bar {
+  max-width: 940px;
+  margin: 0 auto 36px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  background: white;
+  box-shadow: 0 1px 4px rgba(74, 46, 26, 0.1);
+
+  &[data-filter='all'] {
+    color: var(--brown);
+
+    &.active {
+      background: var(--brown);
+      color: white;
+    }
+  }
+
+  &[data-filter='vegetarien'] {
+    color: var(--green);
+
+    &.active {
+      background: var(--green);
+      color: white;
+    }
+  }
+
+  &[data-filter='sans-gluten'] {
+    color: var(--caramel);
+
+    &.active {
+      background: var(--caramel);
+      color: white;
+    }
+  }
+
+  &[data-filter='sans-lactose'] {
+    color: var(--navy);
+
+    &.active {
+      background: var(--navy);
+      color: white;
+    }
+  }
+
+  &[data-filter='lactose-reduit'] {
+    color: var(--plum);
+
+    &.active {
+      background: var(--plum);
+      color: white;
+    }
+  }
+}

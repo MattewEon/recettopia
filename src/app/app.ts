@@ -7,7 +7,7 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './app.scss',
   imports: [TocComponent, RecipeSectionComponent, FilterBarComponent],
   host: { '[class.toc-open]': 'tocOpen()' },
 })

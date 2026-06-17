@@ -1,0 +1,14 @@
+.note {
+  margin-top: 20px;
+  padding: 14px;
+  background: var(--warm);
+  border-left: 3px solid var(--gold);
+  border-radius: 2px;
+  font-size: 0.78rem;
+  color: var(--soft);
+  line-height: 1.6;
+
+  strong {
+    color: var(--brown);
+  }
+}

@@ -1,0 +1,30 @@
+.section-title {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--soft);
+  margin-bottom: 12px;
+}
+
+.variantes {
+  margin-bottom: 24px;
+}
+
+.variante {
+  padding: 10px 14px;
+  background: var(--warm);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-size: 0.84rem;
+  color: var(--brown);
+
+  strong {
+    color: var(--caramel);
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+}

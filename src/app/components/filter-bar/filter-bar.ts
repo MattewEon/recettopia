@@ -8,6 +8,7 @@ export interface FilterOption {
 @Component({
   selector: 'app-filter-bar',
   templateUrl: './filter-bar.html',
+  styleUrl: './filter-bar.scss',
 })
 export class FilterBarComponent {
   activeFilters = input.required<string[]>();

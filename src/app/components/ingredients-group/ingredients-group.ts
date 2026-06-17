@@ -4,6 +4,7 @@ import { Group, IngredientItem } from '../../models/recipe.models';
 @Component({
   selector: 'app-ingredients-group',
   templateUrl: './ingredients-group.html',
+  styleUrl: './ingredients-group.scss',
 })
 export class IngredientsGroupComponent {
   group = input.required<Group>();

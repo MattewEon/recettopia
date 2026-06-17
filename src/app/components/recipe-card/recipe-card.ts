@@ -15,6 +15,7 @@ const LABEL_NAMES: Record<string, string> = {
 @Component({
   selector: 'app-recipe-card',
   templateUrl: './recipe-card.html',
+  styleUrl: './recipe-card.scss',
   imports: [IngredientsGroupComponent, StepsGroupComponent, VariantesGroupComponent, NoteComponent],
 })
 export class RecipeCardComponent {

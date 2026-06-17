@@ -1,6 +1,0 @@
-/* Layout de l'hôte — app-root remplace body comme conteneur principal */
-:host {
-  display: block;
-  background-color: var(--cream);
-  min-height: 100vh;
-}
