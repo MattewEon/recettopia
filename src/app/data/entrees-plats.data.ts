@@ -6,7 +6,7 @@ const ARTICHAUTS_VAPEUR: RecipeCard = {
   tag: 'Vapeur · ~180°C · 30–45 min',
   title: 'Artichauts vapeur & vinaigrette',
   desc: 'Végétarien · Simple & savoureux',
-  labels: ['vegetarien'],
+  labels: ['vegetarien', 'sans-gluten', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -59,6 +59,15 @@ const BRUSCHETTA: RecipeCard = {
   title: 'Bruschetta',
   desc: '3 variantes de garnitures',
   groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Pain (baguette ou ciabatta)', qty: 'selon convives' },
+        { name: "Huile d'olive", qty: 'généreusement' },
+        { name: 'Ail', qty: '1 gousse' },
+      ],
+    },
     {
       type: 'steps',
       title: 'Base',
@@ -156,6 +165,7 @@ const PATE_PIZZA: RecipeCard = {
   tag: 'Four max 300°C · 7–10 min · Pour 2',
   title: 'Pâte à pizza maison',
   desc: 'Croustillante · Levure boulangère',
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -202,6 +212,14 @@ const PATE_PIZZA: RecipeCard = {
         {
           label: 'Astuce croustillante :',
           text: "Badigeonner légèrement les bords avec un peu d'huile d'olive avant d'enfourner.",
+        },
+      ],
+    },
+    {
+      parts: [
+        {
+          label: 'Note :',
+          text: 'Labels valables pour la pâte seule — les garnitures peuvent contenir fromage ou viande selon les goûts.',
         },
       ],
     },
@@ -422,6 +440,7 @@ const HARICOTS_BLANCS_TOMATE: RecipeCard = {
   tag: 'Wok · Mijoté',
   title: 'Haricots blancs à la tomate',
   desc: 'Simple & réconfortant · Option piment de Cayenne',
+  labels: ['vegetarien'],
   groups: [
     {
       type: 'ingredients',
@@ -460,11 +479,13 @@ const FILETS_EGELFIN: RecipeCard = {
   tag: 'Four · Rapide',
   title: "Filets d'églefin marinade moutarde-citron",
   desc: 'Léger & parfumé',
+  labels: ['sans-lactose', 'sans-gluten'],
   groups: [
     {
       type: 'ingredients',
       title: 'Marinade',
       items: [
+        { name: "Filets d'églefin", qty: 'selon convives' },
         { name: 'Jus de citron', qty: 'q.s.' },
         { name: "Huile d'olive", qty: '6 càs' },
         { name: 'Moutarde', qty: '2 càc' },
@@ -496,6 +517,7 @@ const CURRY_PATATES_POISSON: RecipeCard = {
   tag: 'Wok · Pour 3 repas environ',
   title: 'Curry de patates & poisson blanc coco',
   desc: 'Safran, cumin, coriandre · Lait de coco',
+  labels: ['sans-lactose', 'sans-gluten'],
   groups: [
     {
       type: 'ingredients',

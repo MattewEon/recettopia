@@ -45,6 +45,7 @@ const SALADE_PATATES: RecipeCard = {
   tag: 'Poêle · Salade tiède',
   title: 'Salade de patates',
   desc: 'Pois chiches, œuf dur & fromage · Sésame doré',
+  labels: ['vegetarien'],
   groups: [
     {
       type: 'ingredients',

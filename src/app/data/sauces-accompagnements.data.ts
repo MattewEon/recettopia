@@ -6,7 +6,7 @@ const PESTO_TOFU: RecipeCard = {
   tag: 'Mixeur · 5 min · Végan',
   title: 'Mytho pesto basilic au tofu',
   desc: 'Sans parmesan · Onctueux & frais',
-  labels: ['vegetarien', 'sans-lactose'],
+  labels: ['vegetarien', 'sans-lactose', 'sans-gluten'],
   groups: [
     {
       type: 'ingredients',
@@ -42,7 +42,7 @@ const AJITSUKE_TAMAGO: RecipeCard = {
   tag: 'Cuisson 6 min · Marinade 24h minimum',
   title: 'Ajitsuke Tamago',
   desc: "Recette d'Elisa · Umami & savoureux",
-  labels: ['vegetarien', 'sans-gluten', 'sans-lactose'],
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -87,6 +87,14 @@ const AJITSUKE_TAMAGO: RecipeCard = {
         {
           label: 'Astuce contenant :',
           text: 'Prévoir un récipient suffisamment haut pour que les œufs soient bien immergés dans la marinade.',
+        },
+      ],
+    },
+    {
+      parts: [
+        {
+          label: 'Sans gluten :',
+          text: 'Remplacer la sauce soja par du tamari pour une version sans gluten.',
         },
       ],
     },

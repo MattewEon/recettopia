@@ -6,7 +6,7 @@ const OURSONS_CHOCOLAT: RecipeCard = {
   tag: 'Four · 180°C · 20–25 min · ~19 pièces (25–35 g)',
   title: 'Petits oursons aux pépites de chocolat',
   desc: 'Sans lactose · Sans sucre raffiné · Farine complète',
-  labels: ['sans-lactose'],
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -54,7 +54,7 @@ const GAUFRES_CHOCOLAT: RecipeCard = {
   tag: 'Gaufrier · 3–5 min par gaufre · ~17 pièces (40–50 g)',
   title: 'Gaufres aux pépites de chocolat',
   desc: 'Sans lactose · Sans sucre raffiné · Farine complète',
-  labels: ['sans-lactose'],
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -101,7 +101,7 @@ const MUFFINS_NUTELLA: RecipeCard = {
   tag: 'Four · 140°C · 15 min',
   title: 'Muffins moelleux au Nutella',
   desc: "100% végétal · Poudre d'amande · Ultra moelleux",
-  labels: ['vegetarien', 'sans-lactose'],
+  labels: ['vegetarien'],
   groups: [
     {
       type: 'ingredients',
@@ -143,6 +143,16 @@ const MUFFINS_NUTELLA: RecipeCard = {
       ],
     },
   ],
+  notes: [
+    {
+      parts: [
+        {
+          label: 'Sans lactose :',
+          text: 'Remplacer le Nutella par de la confiture ou une pâte à tartiner végétalienne.',
+        },
+      ],
+    },
+  ],
 };
 
 const BISCUITS_ORANGE: RecipeCard = {
@@ -151,6 +161,7 @@ const BISCUITS_ORANGE: RecipeCard = {
   tag: 'Four · 180°C · 15–18 min · ~40 mini cookies',
   title: "Biscuits pelures d'orange & pépites de chocolat",
   desc: 'Anti-gaspi · Orange & chocolat noir',
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -158,7 +169,7 @@ const BISCUITS_ORANGE: RecipeCard = {
       items: [
         { name: "Pelures d'orange", qty: '1' },
         { name: 'Sucre', qty: '150 g' },
-        { name: 'Margarine', qty: '85 g' },
+        { name: 'Margarine végétale', qty: '85 g' },
         { name: 'Œuf', qty: '1' },
         { name: 'Farine', qty: '280 g' },
         { name: 'Levure chimique', qty: '½ sachet' },
@@ -210,6 +221,7 @@ const SPRITZ_COCO: RecipeCard = {
   tag: 'Four · 30 min · Biscuits',
   title: 'Spritz à la noix de coco',
   desc: 'Sablés fondants · Recette carnet',
+  labels: ['vegetarien', 'sans-lactose'],
   groups: [
     {
       type: 'ingredients',
@@ -218,7 +230,7 @@ const SPRITZ_COCO: RecipeCard = {
         { name: 'Sucre fin', qty: '300 g' },
         { name: 'Noix de coco râpée', qty: '150 g' },
         { name: 'Farine', qty: '1 kg' },
-        { name: 'Margarine', qty: '800 g' },
+        { name: 'Margarine végétale', qty: '800 g' },
         { name: 'Œufs (jaunes)', qty: '8' },
         { name: 'Vanilles Sévillanes', qty: '2 sachets' },
         { name: 'Pincée de sel', qty: '1' },
@@ -255,11 +267,14 @@ const MARBRE_CHOCOLAT: RecipeCard = {
       title: 'Ingrédients',
       items: [
         { name: 'Yaourt de brebis', qty: '120-125 g' },
+        { name: 'Œufs', qty: '3' },
         { name: 'Sucre vergeoise', qty: '100 g' },
         { name: 'Sucre roux', qty: '50 g' },
         { name: 'Margarine végétale', qty: '120 g' },
         { name: 'Farine', qty: '230 g' },
         { name: 'Levure chimique', qty: '1 sachet' },
+        { name: 'Cacao en poudre', qty: 'q.s.' },
+        { name: 'Lait végétal (si nécessaire)', qty: 'quelques càs' },
         { name: 'Arôme amande amère', qty: '1 càc' },
         { name: 'Sel', qty: '1 pincée' },
       ],
@@ -283,6 +298,16 @@ const MARBRE_CHOCOLAT: RecipeCard = {
         {
           label: 'Cuire',
           text: "Enfourner 45 min ou jusqu'à ce qu'une lame insérée au centre ressorte propre.",
+        },
+      ],
+    },
+  ],
+  notes: [
+    {
+      parts: [
+        {
+          label: 'Sans lactose :',
+          text: 'Le yaourt de brebis est généralement mieux toléré que le lait de vache par les personnes sensibles au lactose.',
         },
       ],
     },

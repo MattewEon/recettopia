@@ -131,6 +131,7 @@ const VELOUTE_COURGETTES: RecipeCard = {
   tag: 'Velouté · ~30 min · Chaud ou froid',
   title: 'Velouté de courgettes au basilic',
   desc: 'Léger · Basilic frais de préférence',
+  labels: ['vegetarien'],
   groups: [
     {
       type: 'ingredients',
