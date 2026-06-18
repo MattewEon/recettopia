@@ -145,6 +145,53 @@ const BISCUITS_ORANGE: RecipeCard = {
       text: 'une pincée de cannelle ou cardamome se marie parfaitement.' },
   ],
 };
+const MINI_COOKIES_EXPRESS_AMANDE: RecipeCard = {
+  theme: "gold",
+  emoji: '🍪',
+  tag: 'Four · 180°C · 15–20 min · Pour ~12 mini-cookies',
+  title: 'Mini cookies express',
+  labels: ["sans-gluten", "sans-lactose"],
+  desc: 'Sans sucre raffiné · 3 ingrédients · Par @soeursaunaturel',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: "Poudre d'amande", qty: '125 g' },
+        { name: 'Compote de pommes sans sucre ajouté', qty: '100 g' },
+        { name: 'Pépites de chocolat noir', qty: 'q.s.' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Pâte',
+          text: 'Mélanger la poudre d’amande, la compote et les pépites de chocolat jusqu’à obtenir une pâte homogène.'
+        },
+        {
+          label: 'Façonnage',
+          text: 'Former de petits cookies avec les mains.'
+        },
+        {
+          label: 'Plaque',
+          text: 'Déposer les cookies sur une plaque recouverte de papier cuisson.'
+        },
+        {
+          label: 'Cuisson',
+          text: 'Enfourner à 180°C pendant 15 à 20 min jusqu’à ce que les cookies soient légèrement dorés.Laisser refroidir quelques minutes avant de déguster.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+          label: 'Astuce :',
+          text: 'Twistez la recette en ajoutant des compotes aromatisées, par exemple pomme-marron !'
+    }
+  ]
+};
 const BISCUITS_NOISETTE_COMPOTE_CHOCOLAT: RecipeCard = {
   theme: "caramel",
   emoji: '🍪',
@@ -610,6 +657,7 @@ export const GOUTERS_DESSERTS: RecipeSection = {
     OURSONS_CHOCOLAT,
     GAUFRES_CHOCOLAT,
     BISCUITS_ORANGE,
+    MINI_COOKIES_EXPRESS_AMANDE,
     BISCUITS_NOISETTE_COMPOTE_CHOCOLAT,
     CLAFOUTIS_NECTARINES,
     TARTE_MIRABELLES_SPECULOOS,

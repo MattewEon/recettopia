@@ -54,6 +54,68 @@ const ARTICHAUTS_VAPEUR: RecipeCard = {
     },
   ],
 };
+const CREMEUX_PETIT_POIS_OEUFS_MOLLETS: RecipeCard = {
+  theme: 'green',
+  emoji: '🫛',
+  tag: 'Mixeur · 15 min · Pour 2 à 4',
+  title: 'Crémeux de petits pois aux œufs mollets',
+  labels: ["vegetarien"],
+  desc: 'Frais · Crémeux · Inspiration @labretonnequicuisine',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Petits pois', qty: '200 g' },
+        { name: 'Haricots blancs égouttés', qty: '200 g' },
+        { name: 'Ricotta', qty: '2 càs' },
+        { name: 'Purée de sésame (tahini)', qty: '1 càs' },
+        { name: 'Jus de citron', qty: '1/2 citron' },
+        { name: "Huile d'olive", qty: '1 filet + cuisson' },
+        { name: 'Persil', qty: 'q.s.' },
+        { name: 'Œufs', qty: '2 à 4' },
+        { name: 'Origan', qty: 'q.s.' },
+        { name: 'Sel, poivre', qty: 'q.s.' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Petits pois',
+          text: 'Faire revenir les petits pois 3 min à la poêle avec un filet d’huile d’olive.'
+        },
+        {
+          label: 'Crémeux',
+          text: 'Mixer les petits pois, les haricots blancs, la ricotta, la purée de sésame, le jus de citron, le persil et un filet d’huile d’olive jusqu’à obtenir une texture lisse.'
+        },
+        {
+          label: 'Œufs mollets',
+          text: 'Cuire les œufs 6 à 7 min dans l’eau bouillante puis les refroidir immédiatement dans l’eau froide avant de les écaler.'
+        },
+        {
+          label: 'Assemblage',
+          text: 'Répartir le crémeux de petits pois dans les assiettes et déposer les œufs mollets coupés en deux par-dessus.'
+        },
+        {
+          label: 'Finition',
+          text: 'Assaisonner avec sel, poivre et saupoudrer d’un peu d’origan.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+      label: 'Variante :',
+      text: 'Remplacer la ricotta par du fromage frais de chèvre pour une saveur plus marquée.'
+    },
+    {
+      label: 'Service :',
+      text: 'Délicieux en entrée, en tartinade épaisse ou accompagné de pain grillé.'
+    }
+  ]
+};
 const BRUSCHETTA: RecipeCard = {
   theme: 'terracotta',
   emoji: '🍞',
@@ -957,6 +1019,87 @@ const NOODLES_CREMEUSES_CREVETTES: RecipeCard = {
     }
   ],
 };
+const RAMEN_CURRY_ROUGE_COCO: RecipeCard = {
+  theme: "plum",
+  emoji: '🍜',
+  tag: 'Casserole · 25 min · Pour 2',
+  title: 'Ramen au curry rouge & lait de coco',
+  labels: ["vegetarien", "sans-lactose"],
+  desc: 'Crémeux · Épicé · Inspiration asiatique par @lecheftomy · Ultra réconfortant',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients bouillon',
+      items: [
+        { name: 'Nouilles ramen', qty: '2 à 3 portions' },
+        { name: 'Ail', qty: '1 gousse' },
+        { name: 'Gingembre frais', qty: '1 morceau' },
+        { name: 'Cébette', qty: '1' },
+        { name: 'Pâte de curry rouge', qty: '1 càs' },
+        { name: 'Beurre de cacahuètes', qty: '2 càs' },
+        { name: 'Sauce soja', qty: '1 càs' },
+        { name: 'Lait de coco', qty: '300 ml' },
+        { name: 'Bouillon de légumes', qty: '300 ml' }
+      ]
+    },
+    {
+      type: 'ingredients',
+      title: 'Toppings',
+      items: [
+        { name: 'Œufs tamago', qty: 'q.s.' },
+        { name: 'Tofu ferme', qty: 'q.s.' },
+        { name: 'Champignons', qty: 'q.s.' },
+        { name: 'Sauce teriyaki', qty: 'q.s.' },
+        { name: 'Sésame', qty: 'q.s.' },
+        { name: 'Green onion / cébette', qty: 'q.s.' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Base aromatique',
+          text: 'Faire revenir l’ail, le gingembre et la cébette finement émincés pendant quelques minutes.'
+        },
+        {
+          label: 'Bouillon',
+          text: 'Ajouter la pâte de curry rouge, le beurre de cacahuètes et la sauce soja. Mélanger puis verser le lait de coco et le bouillon de légumes.'
+        },
+        {
+          label: 'Mijotage',
+          text: 'Laisser mijoter à feu doux jusqu’à obtenir un bouillon homogène et parfumé.'
+        },
+        {
+          label: 'Nouilles',
+          text: 'Ajouter les nouilles directement dans le bouillon et poursuivre la cuisson jusqu’à ce qu’elles soient tendres.'
+        },
+        {
+          label: 'Tofu grillé',
+          text: 'Râper ou émietter finement le tofu puis le faire griller à la poêle. Ajouter un peu de sauce teriyaki en fin de cuisson.'
+        },
+        {
+          label: 'Champignons',
+          text: 'Faire revenir les champignons à la poêle avec un peu de sauce teriyaki jusqu’à légère caramélisation.'
+        },
+        {
+          label: 'Service',
+          text: 'Répartir les nouilles et le bouillon dans les bols puis ajouter les œufs tamago coupé en deux, le tofu grillé, les champignons, le sésame et la green onion.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+      label: 'Astuce :',
+      text: 'Le tofu râpé puis grillé apporte une texture proche d’un topping croustillant très gourmand.'
+    },
+    {
+      label: 'Version sans gluten :',
+      text: 'Utiliser des nouilles de riz pour un résultat sans gluten.'
+    }
+  ]
+};
 const PARMENTIER_BUTTERNUT: RecipeCard = {
   theme: 'navy',
   emoji: '🍄‍🟫',
@@ -1228,6 +1371,7 @@ export const ENTREES_PLATS: RecipeSection = {
   description: 'Entre entrée et plat, la différence tient davantage à l\'appétit qu\'à la recette. Ouvrir le repas, ou en être la vedette : tout est affaire de faim... ou de générosité ♥.',
   cards: [
     ARTICHAUTS_VAPEUR,
+    CREMEUX_PETIT_POIS_OEUFS_MOLLETS,
     BRUSCHETTA,
     GAUFRES_PATATE_DOUCE_CURRY,
     TARTE_CROUSTILLANTE_THON_CONCOMBRE,
@@ -1245,6 +1389,7 @@ export const ENTREES_PLATS: RecipeSection = {
     CURRY_HARICOTS_ROUGES_COCO,
     RISOTTO_CURRY_COCO,
     NOODLES_CREMEUSES_CREVETTES,
+    RAMEN_CURRY_ROUGE_COCO,
     PARMENTIER_BUTTERNUT,
     GRATIN_DAUPHINOIS_RESTES_RACLETTE,
     GRATIN_PDT_CHORIZO,
