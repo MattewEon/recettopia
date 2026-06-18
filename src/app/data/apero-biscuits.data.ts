@@ -4,22 +4,28 @@ const CAKE_SALE: RecipeCard = {
   theme: 'choco',
   emoji: '🍞',
   tag: 'Four · 180°C · 40–45 min',
-  title: 'Cake salé lardons-olives-gruyère',
+  title: 'Cake salé',
   desc: 'Recette classique · Facile & généreux',
   groups: [
     {
       type: 'ingredients',
-      title: 'Ingrédients',
+      title: 'Base',
       items: [
         {name: 'Farine', qty: '200 g'},
         {name: 'Levure chimique', qty: '1 sachet'},
         {name: 'Œufs', qty: '3'},
         {name: 'Huile', qty: '100 ml'},
         {name: 'Lait chaud', qty: '100 ml'},
+        {name: 'Sel, poivre', qty: '1 pincée'},
+      ],
+    },
+    {
+      type: 'ingredients',
+      title: 'Garniture',
+      items: [
         {name: 'Lardons', qty: '200 g'},
         {name: 'Olives', qty: '150 g'},
         {name: 'Gruyère râpé', qty: '100 g'},
-        {name: 'Sel, poivre', qty: '1 pincée'},
       ],
     },
     {
@@ -28,23 +34,33 @@ const CAKE_SALE: RecipeCard = {
       items: [
         {
           label: 'Mélanger',
-          text: "Mélanger les ingrédients dans l'ordre : farine, sel, poivre, levure, œufs, huile, lait chaud, lardons, olives, gruyère.",
+          text: "Mélanger les ingrédients dans l'ordre : farine, sel, poivre, levure, œufs, huile, lait chaud et former une pâte homogène.",
+        },
+        {
+          label: 'Garnir',
+          text: "Ajouter la garniture de votre choix, ici : lardons, olives, et gruyère.",
         },
         {
           label: 'Cuisson',
           text: 'Verser dans un moule beurré. Enfourner à 180°C pendant 40 à 45 min. Vérifier la cuisson avec une lame.',
         },
-      ],
+      ]
     },
   ],
+  notes: [
+    {
+      label: 'Garniture au choix :',
+      text: 'Pour une version végétarienne, on pourra garnir d\'olives, tomates séchées et fromage.'
+    },
+  ]
 };
 const PAIN_LENTILLES_CORAIL: RecipeCard = {
   theme: "gold",
   emoji: '🍞',
   tag: 'Four · 180°C · 30 min + trempage · 10 tranches',
   title: 'Pain de lentilles corail',
-  desc: 'Sans gluten · Riche en protéines · Moelleux · Facile à préparer',
-  labels: ['sans-gluten'],
+  desc: 'Riche en protéines · Moelleux · Facile à préparer',
+  labels: ['sans-gluten', "sans-lactose", "vegetarien"],
   groups: [
     {
       type: 'ingredients',
@@ -87,10 +103,6 @@ const PAIN_LENTILLES_CORAIL: RecipeCard = {
   ],
   notes: [
     {
-      label: 'Nutrition :',
-      text: 'Environ 105 kcal, 7 g de protéines, 12 g de glucides et 3 g de lipides par tranche (sur une base de 10 tranches).'
-    },
-    {
       label: 'Astuce :',
       text: 'Ajouter des herbes, des épices ou des graines pour varier les saveurs.'
     },
@@ -105,7 +117,8 @@ const SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME: RecipeCard = {
   emoji: '🥒',
   tag: 'Frais · Sans cuisson · 10 min · Idéal en verrine',
   title: 'Salade concombre, chèvre frais, coriandre & sésame',
-  desc: 'Fraîche · Légère · Parfumée · Croquante · Express',
+  desc: 'Fraîche · Parfumée · Croquante',
+  labels: ["vegetarien", "sans-gluten", "lactose-reduit"],
   groups: [
     {
       type: 'ingredients',
@@ -160,7 +173,7 @@ export const APERO_BISCUITS: RecipeSection = {
   description: ' "Avant les grands plats viennent les petites bouchées, celles qui ouvrent l\'appétit et le cœur..." ',
   cards: [
     CAKE_SALE,
-    SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME,
     PAIN_LENTILLES_CORAIL,
+    SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME,
   ]
 };

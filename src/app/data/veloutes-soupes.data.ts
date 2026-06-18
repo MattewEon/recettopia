@@ -1,5 +1,183 @@
 import { RecipeCard, RecipeSection } from '../models/recipe.models';
 
+const VELOUTE_CAROTTES: RecipeCard = {
+  theme: 'caramel',
+  emoji: '🥕',
+  tag: 'Velouté · ~30 min · Pour 3',
+  title: 'Velouté de carottes au cumin',
+  labels: ["vegetarien", "sans-gluten"],
+  desc: 'Doux · Option sucré-salé au miel',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Carottes', qty: '~500 g' },
+        { name: 'Oignon', qty: '½' },
+        { name: 'Bouillon de poule', qty: '1 cube' },
+        { name: 'Beurre', qty: '1 morceau' },
+        { name: 'Curry + cumin', qty: '½ càc chacun (~)' },
+        { name: 'Crème fraîche légère', qty: '2 càs' },
+        { name: 'Vache qui rit', qty: '2' },
+        { name: 'Sel de Guérande (optionnel)', qty: '1 pincée' },
+        { name: 'Miel (option sucré-salé)', qty: '1 càc' },
+      ],
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Cuire',
+          text: "Cuire les carottes en morceaux avec l'oignon, le bouillon, le beurre, le curry et le cumin.",
+        },
+        { label: 'Mixer', text: 'Ajouter crème et Vache qui rit avant de mixer.' },
+        {
+          label: 'Servir',
+          text: "Saupoudrer de cumin. Goûter avant d'ajouter le sel. Option miel pour les amateurs de sucré-salé.",
+        },
+      ],
+    },
+  ],
+};
+const CREME_PETIT_POIS_JAUNE_OEUF_CONFIT: RecipeCard = {
+  theme: 'gold',
+  emoji: '🫛',
+  tag: 'Blender · Repos 3 h · 20 min · Pour 2 à 4',
+  title: 'Crème de petits pois & jaune d’œuf confit',
+  desc: 'Élégant · Crémeux · Frais · Inspiration bistrot',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Petits pois', qty: '300 g' },
+        { name: 'Crème de soja liquide', qty: '10 à 15 cl' },
+        { name: 'Jaunes d’œufs', qty: '2 à 4' },
+        { name: 'Sauce soja salée', qty: 'q.s.' },
+        { name: 'Gingembre frais ou en poudre', qty: 'q.s.' },
+        { name: 'Huile de sésame', qty: '1 càc' },
+        { name: 'Graines de sésame', qty: 'q.s.' },
+        { name: 'Curcuma', qty: '1 pincée' },
+        { name: 'Sel, poivre', qty: 'q.s.' }
+      ]
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Jaunes confits',
+          text: 'Déposer les jaunes d’œufs dans un récipient avec la sauce soja et le gingembre. Couvrir et laisser confire au réfrigérateur pendant au moins 3 h.'
+        },
+        {
+          label: 'Petits pois',
+          text: 'Cuire les petits pois dans l’eau bouillante puis les plonger immédiatement dans un bain glacé afin de conserver leur couleur.'
+        },
+        {
+          label: 'Crème',
+          text: 'Mixer les petits pois avec la crème de soja, l’huile de sésame, le curcuma, le sel et le poivre jusqu’à obtenir une texture lisse et veloutée.'
+        },
+        {
+          label: 'Dressage',
+          text: 'Répartir la crème de petits pois dans des assiettes ou des bols.'
+        },
+        {
+          label: 'Finition',
+          text: 'Déposer délicatement un jaune d’œuf confit au centre puis saupoudrer de graines de sésame.'
+        }
+      ]
+    }
+  ],
+  notes: [
+    {
+      label: 'Twist chèvre :',
+      text: 'Ajouter quelques morceaux de chèvre frais émiettés sur la crème de petits pois. L’association fonctionne particulièrement bien avec le jaune confit.'
+    },
+    {
+      label: 'Version croquante :',
+      text: 'Ajouter des noisettes ou des amandes torréfiées concassées juste avant de servir.'
+    },
+    {
+      label: 'Version gourmande :',
+      text: 'Terminer avec quelques gouttes d’huile de sésame grillé ou de piment croustillant.'
+    }
+  ]
+};
+const VELOUTE_CHOUFLEUR: RecipeCard = {
+  theme: 'green',
+  emoji: '🥦',
+  tag: 'Velouté · ~30 min · Pour 4',
+  title: 'Velouté de chou-fleur',
+  desc: 'Fondant · Parmesan en finition',
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Chou-fleur (surgelé possible)', qty: '1 kg' },
+        { name: 'Bouillon cube légumes/poule', qty: '1' },
+        { name: "Huile d'olive", qty: 'généreusement' },
+        { name: 'Crème fraîche', qty: '2 càs' },
+        { name: 'Vache qui rit', qty: '3' },
+        { name: 'Muscade', qty: 'selon goût' },
+        { name: 'Parmesan/grana en poudre', qty: 'au service' },
+      ],
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Cuire',
+          text: "Cuire le chou-fleur dans l'eau avec le bouillon et l'huile d'olive.",
+        },
+        { label: 'Mixer', text: 'Ajouter crème, Vache qui rit et muscade avant de mixer.' },
+        { label: 'Servir', text: 'Ajouter parmesan ou grana en poudre au moment de servir.' },
+      ],
+    },
+  ],
+};
+const VELOUTE_COURGETTES: RecipeCard = {
+  theme: 'teal',
+  emoji: '🥒',
+  tag: 'Velouté · ~30 min · Chaud ou froid',
+  title: 'Velouté de courgettes au basilic',
+  desc: 'Léger · Basilic frais de préférence',
+  labels: ['vegetarien'],
+  groups: [
+    {
+      type: 'ingredients',
+      title: 'Ingrédients',
+      items: [
+        { name: 'Courgettes', qty: '1–2 / personne' },
+        { name: 'Basilic frais (de préférence)', qty: 'généreusement' },
+        { name: 'Crème fraîche épaisse légère', qty: 'q.s.' },
+        { name: 'Vache qui rit', qty: '1 / personne' },
+      ],
+    },
+    {
+      type: 'steps',
+      title: 'Préparation',
+      items: [
+        {
+          label: 'Cuire',
+          text: "Cuire les courgettes à l'eau. Attention : elles sont très riches en eau — ne pas surcharger en liquide.",
+        },
+        {
+          label: 'Mixer',
+          text: "Ajouter le basilic généreusement, la crème et les Vache qui rit. Mixer jusqu'à texture lisse.",
+        },
+      ],
+    },
+  ],
+  notes: [
+    {
+      label: 'Astuce :',
+      text: 'Le basilic frais fait VRAIMENT la différence. Se déguste chaud ou froid selon la saison.',
+    },
+  ],
+};
 const VELOUTE_POTIMARRON: RecipeCard = {
   theme: 'terracotta',
   emoji: '🍲',
@@ -45,123 +223,6 @@ const VELOUTE_POTIMARRON: RecipeCard = {
     },
   ],
 };
-
-const VELOUTE_CAROTTES: RecipeCard = {
-  theme: 'caramel',
-  emoji: '🥕',
-  tag: 'Velouté · ~30 min · Pour 3',
-  title: 'Velouté de carottes au cumin',
-  desc: 'Doux · Option sucré-salé au miel',
-  groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Carottes', qty: '~500 g' },
-        { name: 'Oignon', qty: '½' },
-        { name: 'Bouillon de poule', qty: '1 cube' },
-        { name: 'Beurre', qty: '1 morceau' },
-        { name: 'Curry + cumin', qty: '½ càc chacun (~)' },
-        { name: 'Crème fraîche légère', qty: '2 càs' },
-        { name: 'Vache qui rit', qty: '2' },
-        { name: 'Sel de Guérande (optionnel)', qty: '1 pincée' },
-        { name: 'Miel (option sucré-salé)', qty: 'un peu' },
-      ],
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Cuire',
-          text: "Cuire les carottes en morceaux avec l'oignon, le bouillon, le beurre, le curry et le cumin.",
-        },
-        { label: 'Mixer', text: 'Ajouter crème et Vache qui rit avant de mixer.' },
-        {
-          label: 'Servir',
-          text: "Saupoudrer de cumin. Goûter avant d'ajouter le sel. Option miel pour les amateurs de sucré-salé.",
-        },
-      ],
-    },
-  ],
-};
-
-const VELOUTE_CHOUFLEUR: RecipeCard = {
-  theme: 'green',
-  emoji: '🥦',
-  tag: 'Velouté · ~30 min · Pour 4',
-  title: 'Velouté de chou-fleur',
-  desc: 'Fondant · Parmesan en finition',
-  groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Chou-fleur (surgelé possible)', qty: '1 kg' },
-        { name: 'Bouillon cube légumes/poule', qty: '1' },
-        { name: "Huile d'olive", qty: 'généreusement' },
-        { name: 'Crème fraîche', qty: '2 càs' },
-        { name: 'Vache qui rit', qty: '3' },
-        { name: 'Muscade', qty: 'selon goût' },
-        { name: 'Parmesan/grana en poudre', qty: 'au service' },
-      ],
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Cuire',
-          text: "Cuire le chou-fleur dans l'eau avec le bouillon et l'huile d'olive.",
-        },
-        { label: 'Mixer', text: 'Ajouter crème, Vache qui rit et muscade avant de mixer.' },
-        { label: 'Servir', text: 'Ajouter parmesan ou grana en poudre au moment de servir.' },
-      ],
-    },
-  ],
-};
-
-const VELOUTE_COURGETTES: RecipeCard = {
-  theme: 'teal',
-  emoji: '🥒',
-  tag: 'Velouté · ~30 min · Chaud ou froid',
-  title: 'Velouté de courgettes au basilic',
-  desc: 'Léger · Basilic frais de préférence',
-  labels: ['vegetarien'],
-  groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Courgettes', qty: '1–2 / personne' },
-        { name: 'Basilic frais (de préférence)', qty: 'généreusement' },
-        { name: 'Crème fraîche épaisse légère', qty: 'q.s.' },
-        { name: 'Vache qui rit', qty: '1 / personne' },
-      ],
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Cuire',
-          text: "Cuire les courgettes à l'eau. Attention : elles sont très riches en eau — ne pas surcharger en liquide.",
-        },
-        {
-          label: 'Mixer',
-          text: "Ajouter le basilic généreusement, la crème et les Vache qui rit. Mixer jusqu'à texture lisse.",
-        },
-      ],
-    },
-  ],
-  notes: [
-    {
-      label: 'Astuce :',
-      text: 'Le basilic frais fait VRAIMENT la différence. Se déguste chaud ou froid selon la saison.',
-    },
-  ],
-};
-
 const VELOUTE_BUTTERNUT_COCO: RecipeCard = {
   theme: 'navy',
   emoji: '🥥',
@@ -195,7 +256,6 @@ const VELOUTE_BUTTERNUT_COCO: RecipeCard = {
     },
   ],
 };
-
 const VELOUTE_POIVRON_CHORIZO: RecipeCard = {
   theme: 'terracotta',
   emoji: '🫑',
@@ -260,10 +320,11 @@ export const VELOUTES_SOUPES: RecipeSection = {
     ],
   },
   cards: [
-    VELOUTE_POTIMARRON,
     VELOUTE_CAROTTES,
+    CREME_PETIT_POIS_JAUNE_OEUF_CONFIT,
     VELOUTE_CHOUFLEUR,
     VELOUTE_COURGETTES,
+    VELOUTE_POTIMARRON,
     VELOUTE_BUTTERNUT_COCO,
     VELOUTE_POIVRON_CHORIZO,
   ],
