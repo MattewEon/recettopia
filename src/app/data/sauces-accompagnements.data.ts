@@ -1,154 +1,100 @@
 import { RecipeCard, RecipeSection } from '../models/recipe.models';
+import { ingredients, recipe, steps } from '../models/recipe.builder';
 
-const BOUILLON_LEGUMES_MAISON: RecipeCard = {
+const BOUILLON_LEGUMES_MAISON: RecipeCard = recipe({
   theme: 'gold',
   emoji: '🥕',
   tag: 'Casserole · 45–60 min · Pour 1 grand volume',
   title: 'Bouillon de légumes maison',
   desc: 'Simple · Aromatique · Base cuisine maison · Sans additif',
   groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Poireaux (blancs)', qty: '2' },
-        { name: 'Carottes', qty: '3' },
-        { name: 'Oignon', qty: '1' },
-        { name: 'Bouquet garni', qty: '1' },
-        { name: 'Sel', qty: 'q.s.' },
-        { name: 'Poivre', qty: 'q.s.' },
-        { name: 'Eau', qty: 'environ 1,5 à 2 L' }
-      ]
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Légumes',
-          text: 'Éplucher et couper grossièrement les carottes, l’oignon et les poireaux.'
-        },
-        {
-          label: 'Cuisson',
-          text: 'Mettre tous les légumes dans une grande casserole avec l’eau et le bouquet garni.'
-        },
-        {
-          label: 'Mijotage',
-          text: 'Porter à ébullition puis laisser frémir 45 à 60 minutes.'
-        },
-        {
-          label: 'Assaisonnement',
-          text: 'Ajouter sel et poivre en fin de cuisson selon le goût.'
-        },
-        {
-          label: 'Filtrage',
-          text: 'Filtrer le bouillon et récupérer le liquide.'
-        }
-      ]
-    }
+    ingredients([
+      ['Poireaux (blancs)', '2'],
+      ['Carottes', '3'],
+      ['Oignon', '1'],
+      ['Bouquet garni', '1'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
+      ['Eau', '1,5 à 2 L'],
+    ]),
+
+    steps([
+      ['Légumes', "Éplucher et couper grossièrement les carottes, l'oignon et les poireaux."],
+      [
+        'Cuisson',
+        "Mettre tous les légumes dans une grande casserole avec l'eau et le bouquet garni.",
+      ],
+      ['Mijotage', 'Porter à ébullition puis laisser frémir 45 à 60 minutes.'],
+      ['Assaisonnement', 'Ajouter sel et poivre en fin de cuisson selon goût.'],
+      ['Filtrage', 'Filtrer le bouillon et récupérer le liquide.'],
+    ]),
   ],
   notes: [
     {
       label: 'Utilisation :',
-      text: 'Base idéale pour risottos, sauces, soupes ou blanquettes végétales.'
+      text: 'Base idéale pour risottos, sauces, soupes ou blanquettes végétales.',
     },
     {
       label: 'Conservation :',
-      text: 'Se garde 3 à 4 jours au réfrigérateur ou peut être congelé en portions.'
-    }
-  ]
-};
-const PESTO_TOFU: RecipeCard = {
+      text: 'Se garde 3 à 4 jours au réfrigérateur ou peut être congelé en portions.',
+    },
+  ],
+});
+const PESTO_TOFU: RecipeCard = recipe({
   theme: 'green',
   emoji: '🌿',
-  tag: 'Mixeur · 5 min · Végan',
+  tag: 'Mixeur · 5 min · Vegan',
   title: 'Mytho pesto basilic au tofu',
   desc: 'Sans parmesan · Onctueux & frais',
   labels: ['vegetarien', 'sans-lactose', 'sans-gluten'],
   groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Basilic', qty: 'généreusement' },
-        { name: 'Tofu soyeux au basilic', qty: '100 g' },
-        { name: "Huile d'olive", qty: '100 ml' },
-        { name: 'Amandes', qty: 'selon goût' },
-        { name: 'Ail', qty: 'selon goût' },
-        { name: 'Sel', qty: 'q.s.' },
-        { name: 'Piment (optionnel)', qty: 'q.s.' },
-        { name: 'Jus de citron (optionnel)', qty: 'q.s.' },
-      ],
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Mixer',
-          text: "Mettre tous les ingrédients dans le bol mixeur et mixer jusqu'à consistance lisse.",
-        },
-        { label: 'Servir', text: "Balance sur des pâtes. C'est tout !" },
-      ],
-    },
+    ingredients([
+      ['Basilic', 'généreusement'],
+      ['Tofu soyeux au basilic', '100 g'],
+      ["Huile d'olive", '100 ml'],
+      ['Amandes', 'selon goût'],
+      ['Ail', 'selon goût'],
+      ['Sel', 'q.s.'],
+      ['Piment (optionnel)', 'q.s.'],
+      ['Jus de citron (optionnel)', 'q.s.'],
+    ]),
+
+    steps([
+      ['Mixer', "Mettre tous les ingrédients dans le mixeur et mixer jusqu'à consistance lisse."],
+      ['Servir', "Servir sur des pâtes. C'est tout !"],
+    ]),
   ],
-};
-const TARTINADE_TOFU_BASILIC_OLIVES: RecipeCard = {
+});
+const TARTINADE_TOFU_BASILIC_OLIVES: RecipeCard = recipe({
   theme: 'green',
   emoji: '🫒',
   tag: 'Mixeur · Sans cuisson · 10 min · Pour 1 bol',
   title: 'Tartinade tofu, basilic & olives',
   desc: 'Crémeuse · Méditerranéenne · Riche en protéines · Sans lactose',
   groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients',
-      items: [
-        { name: 'Tofu nature', qty: '200 g' },
-        { name: 'Olives vertes ou noires dénoyautées', qty: '80 à 100 g' },
-        { name: 'Amandes', qty: '30 g' },
-        { name: 'Ail confit', qty: '2 à 4 gousses' },
-        { name: 'Basilic frais', qty: '1 poignée' },
-        { name: "Huile d'olive", qty: '1 à 2 càs' },
-        { name: 'Jus de citron', qty: '1 càs' },
-        { name: 'Poivre', qty: 'q.s.' }
-      ]
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Mixage',
-          text: 'Placer le tofu, les olives, les amandes, l’ail confit, le basilic, l’huile d’olive et le jus de citron dans un mixeur.'
-        },
-        {
-          label: 'Texture',
-          text: 'Mixer jusqu’à obtenir une texture homogène. Ajouter un peu d’huile d’olive si nécessaire pour assouplir la préparation.'
-        },
-        {
-          label: 'Assaisonnement',
-          text: 'Goûter puis ajuster en poivre, citron ou basilic selon les préférences.'
-        },
-        {
-          label: 'Service',
-          text: 'Servir frais sur du pain grillé, des crackers ou avec des bâtonnets de légumes.'
-        }
-      ]
-    }
+    ingredients([
+      ['Tofu nature', '200 g'],
+      ['Olives vertes ou noires dénoyautées', '80 à 100 g'],
+      ['Amandes', '30 g'],
+      ['Ail confit', '2 à 4 gousses'],
+      ['Basilic frais', '1 poignée'],
+      ["Huile d'olive", '1 à 2 càs'],
+      ['Jus de citron', '1 càs'],
+      ['Poivre', 'q.s.'],
+    ]),
+
+    steps([
+      [
+        'Mixage',
+        "Placer tofu, olives, amandes, ail confit, basilic, huile d'olive et jus de citron dans un mixeur.",
+      ],
+      ['Texture', "Mixer jusqu'à texture homogène. Ajouter un peu d'huile si besoin."],
+      ['Assaisonnement', 'Ajuster poivre, citron ou basilic.'],
+      ['Service', 'Servir frais sur pain grillé ou crudités.'],
+    ]),
   ],
-  notes: [
-    {
-      label: 'Astuce :',
-      text: 'Les olives apportent déjà beaucoup de sel ; goûter avant d’en ajouter.'
-    },
-    {
-      label: 'Conservation :',
-      text: 'Se conserve 3 à 4 jours au réfrigérateur dans une boîte hermétique.'
-    }
-  ]
-};
-const AJITSUKE_TAMAGO: RecipeCard = {
+});
+const AJITSUKE_TAMAGO: RecipeCard = recipe({
   theme: 'ink',
   emoji: '🥚',
   tag: 'Cuisson 6 min · Marinade 24h minimum',
@@ -156,61 +102,30 @@ const AJITSUKE_TAMAGO: RecipeCard = {
   desc: "Recette d'Elisa · Umami & savoureux",
   labels: ['vegetarien', 'sans-lactose'],
   groups: [
-    {
-      type: 'ingredients',
-      title: 'Ingrédients (pour 6 œufs)',
-      items: [
-        { name: 'Œufs', qty: '6' },
-        { name: 'Eau tiède', qty: '15 cl' },
-        { name: 'Sucre', qty: '60 ml (¼ cup)' },
-        { name: 'Sauce soja', qty: '80 ml (⅓ cup)' },
-        { name: "Gousses d'ail hachées", qty: '4' },
-        { name: 'Vinaigre', qty: '2 c.café' },
-        { name: 'Glutamate (optionnel)', qty: '1 pincée' },
-        { name: 'Green onions (optionnels)', qty: '1–2 branches' },
+    ingredients([
+      ['Œufs', '6'],
+      ['Eau tiède', '15 cl'],
+      ['Sucre', '60 ml (1/4 cup)'],
+      ['Sauce soja', '80 ml (1/3 cup)'],
+      ["Gousses d'ail hachées", '4'],
+      ['Vinaigre', '2 c.café'],
+      ['Glutamate (optionnel)', '1 pincée'],
+      ['Green onions (optionnels)', '1-2 branches'],
+    ]),
+
+    steps([
+      ['Œufs mollets', 'Cuire exactement 6 minutes puis plonger dans eau glacée.'],
+      ['Écaler', 'Retirer la coquille délicatement.'],
+      [
+        'Marinade',
+        "Dissoudre le sucre dans l'eau tiède puis ajouter sauce soja, vinaigre et aromates.",
       ],
-    },
-    {
-      type: 'steps',
-      title: 'Préparation',
-      items: [
-        {
-          label: 'Œufs mollets',
-          text: "Faire bouillir exactement 6 minutes. Préparer un saladier d'eau glacée et y plonger les œufs immédiatement.",
-        },
-        {
-          label: 'Écaler',
-          text: 'Après quelques minutes, éclater et peler la coque et la petite peau délicatement.',
-        },
-        {
-          label: 'Marinade',
-          text: "Dissoudre le sucre dans l'eau tiède. Ajouter sauce soja, vinaigre et les autres ingrédients.",
-        },
-        {
-          label: 'Mariner',
-          text: 'Plonger les œufs et les solides dans la marinade. Réfrigérer au minimum 1h, idéalement 24h.',
-        },
-      ],
-    },
+      ['Mariner', 'Plonger les œufs et réfrigérer minimum 1h, idéalement 24h.'],
+    ]),
   ],
-  notes: [
-    {
-      label: 'Astuce contenant :',
-      text: 'Prévoir un récipient suffisamment haut pour que les œufs soient bien immergés dans la marinade.',
-    },
-    {
-      label: 'Sans gluten :',
-      text: 'Remplacer la sauce soja par du tamari pour une version sans gluten.',
-    },
-  ],
-};
+});
 
 export const SAUCES_ACCOMPAGNEMENTS: RecipeSection = {
   label: 'Sauces & accompagnements',
-  cards: [
-    BOUILLON_LEGUMES_MAISON,
-    PESTO_TOFU,
-    TARTINADE_TOFU_BASILIC_OLIVES,
-    AJITSUKE_TAMAGO,
-  ],
+  cards: [BOUILLON_LEGUMES_MAISON, PESTO_TOFU, TARTINADE_TOFU_BASILIC_OLIVES, AJITSUKE_TAMAGO],
 };
