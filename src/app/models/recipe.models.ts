@@ -1,4 +1,14 @@
-export type Theme = 'choco' | 'caramel' | 'green' | 'navy' | 'terracotta' | 'plum' | 'teal' | 'ink' | 'gold' ;
+export type Theme =
+  | 'choco'
+  | 'caramel'
+  | 'green'
+  | 'navy'
+  | 'terracotta'
+  | 'plum'
+  | 'teal'
+  | 'ink'
+  | 'gold';
+
 export type Label = 'vegetarien' | 'sans-gluten' | 'sans-lactose' | 'lactose-reduit';
 
 export interface IngredientItem {
@@ -20,9 +30,9 @@ export type GroupItem = IngredientItem | StepItem | VarianteItem;
 
 export interface Group {
   type: 'ingredients' | 'steps' | 'variantes';
-  title: string;
-  subtitle?: string;
-  style?: string;
+      title: string;
+      subtitle?: string;
+      style?: string;
   items: GroupItem[];
 }
 
@@ -42,8 +52,11 @@ export interface RecipeCard {
   tag: string;
   title: string;
   desc: string;
+
   labels?: Label[];
+
   groups: Group[];
+
   notes?: RecipeNote[];
 }
 
