@@ -72,7 +72,7 @@ const BISCUITS_ORANGE: RecipeCard = {
       ['Farine', '280 g'],
       ['Levure chimique', '½ sachet'],
       ['Sel', '1 pincée'],
-      ['Chocolat noir dessert', '½ tablette'],
+      ['Chocolat noir', '½ tablette'],
     ]),
     steps([
       [
@@ -311,7 +311,7 @@ const MARBRE_CHOCOLAT: RecipeCard = {
       ['Levure chimique', '1 sachet'],
       ['Cacao en poudre', 'q.s.'],
       ['Lait végétal', 'q.s.'],
-      ['Arôme amande amère', '1 càc'],
+      ["Arôme d'amande amère", '1 càc'],
       ['Sel', '1 pincée'],
     ]),
     steps([
@@ -331,7 +331,7 @@ const GATEAU_HARICOT_ROUGE_CHOCOLAT: RecipeCard = {
   labels: ['sans-gluten', 'sans-lactose'],
   groups: [
     ingredients([
-      ['Haricots rouges cuits', '425 g'],
+      ['Haricots rouges cuits', '425 g', 'Haricots rouges'],
       ['Œufs', '4'],
       ["Poudre d'amande", '85 g'],
       ['Cacao non sucré', '68 g'],

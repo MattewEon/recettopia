@@ -3,16 +3,17 @@ import { Group, RecipeCard, RecipeNote } from '../models/recipe.models';
 export const recipe = (recipe: RecipeCard): RecipeCard => recipe;
 
 export const ingredients = (
-  items: [string, string][],
+  items: [string, string, string?][],
   title = 'Ingrédients',
   subtitle?: string,
 ): Group => ({
   type: 'ingredients',
   title,
   subtitle,
-  items: items.map(([name, qty]) => ({
+  items: items.map(([name, qty, key]) => ({
     name,
     qty,
+    ...(key !== undefined ? { key } : {}),
   })),
 });
 

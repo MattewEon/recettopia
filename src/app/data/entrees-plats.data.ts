@@ -51,7 +51,7 @@ const CREMEUX_PETIT_POIS_OEUFS_MOLLETS: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Petits pois', '200 g'],
-      ['Haricots blancs égouttés', '200 g'],
+      ['Haricots blancs égouttés', '200 g', 'Haricots blancs'],
       ['Ricotta', '2 càs'],
       ['Purée de sésame (tahini)', '1 càs'],
       ['Jus de citron', '1/2 citron'],
@@ -141,10 +141,10 @@ const TARTE_CROUSTILLANTE_THON_CONCOMBRE: RecipeCard = recipe({
       ['Graines de sésame noir et blanc', 'q.s.'],
       ['Thon au naturel', '3 boîtes'],
       ['Fromage à tartiner (type St Môret)', '5 càs'],
-      ['Oignon rouge émincé', '1/2'],
+      ['Oignon rouge émincé', '1/2', 'Oignon rouge'],
       ['Citron (zeste)', '1'],
       ['Ciboulette fraîche', 'q.s.'],
-      ['Concombres', '1 à 2 selon taille'],
+      ['Concombre', '1 à 2 selon taille'],
     ]),
     steps([
       [
@@ -533,7 +533,7 @@ const CURRY_HARICOTS_ROUGES_COCO: RecipeCard = recipe({
       ['Poivre', 'q.s.'],
       ['Curcuma', 'q.s.'],
       ['Cumin', 'q.s.'],
-      ['Coriandre moulue ou fraîche', 'q.s.'],
+      ['Coriandre moulue ou fraîche', 'q.s.', 'Coriandre fraîche'],
       ['Piment de Cayenne', 'q.s.'],
       ['Sel', 'q.s.'],
     ]),
@@ -626,7 +626,7 @@ const RAMEN_CURRY_ROUGE_COCO: RecipeCard = recipe({
       ['Gingembre frais', '1 morceau'],
       ['Cébette', '1'],
       ['Pâte de curry rouge', '1 càs'],
-      ['Beurre de cacahuètes', '2 càs'],
+      ['Beurre de cacahuète', '2 càs'],
       ['Sauce soja', '1 càs'],
       ['Lait de coco', '300 ml'],
       ['Bouillon de légumes', '300 ml'],
@@ -637,7 +637,7 @@ const RAMEN_CURRY_ROUGE_COCO: RecipeCard = recipe({
       ['Champignons', 'q.s.'],
       ['Sauce teriyaki', 'q.s.'],
       ['Sésame', 'q.s.'],
-      ['Green onion / cébette', 'q.s.'],
+      ['Cébette', 'q.s.'],
     ]),
     steps([
       ['Base aromatique', 'Faire revenir ail, gingembre et cébette finement émincés.'],
@@ -661,7 +661,7 @@ const PARMENTIER_BUTTERNUT: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Courge butternut', '1'],
-      ['Champignons finement émincés', 'selon goût'],
+      ['Champignons finement émincés', 'selon goût', 'Champignons'],
       ['Oignons', 'selon goût'],
       ['Margarine', 'q.s.'],
       ['Crème', '1 càs'],

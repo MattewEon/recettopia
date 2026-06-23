@@ -81,6 +81,60 @@ header {
   z-index: 99;
 }
 
+.ingredient-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 46, 0.4);
+  z-index: 99;
+}
+
+&.ingredient-index-open .ingredient-backdrop {
+  display: block;
+}
+
+.ingredient-index-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 110;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--brown);
+  color: var(--cream);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s;
+
+  &.has-selection {
+    background: var(--caramel);
+  }
+}
+
+.ingredient-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--choco);
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1180px) {
   .toc-toggle,
   .toc-backdrop {

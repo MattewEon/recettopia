@@ -1,0 +1,43 @@
+<div class="ingredient-index">
+  <div class="heading-row">
+    <p class="heading">Index des ingrédients</p>
+    <button class="close-btn" (click)="close.emit()" aria-label="Fermer">×</button>
+  </div>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Chercher un ingrédient…"
+      [value]="searchQuery()"
+      (input)="searchQuery.set($any($event.target).value)"
+      autocomplete="off"
+    />
+    @if (searchQuery()) {
+      <button class="clear-search" (click)="searchQuery.set('')" aria-label="Effacer la recherche">×</button>
+    }
+  </div>
+
+  @if (selectedIngredients().length > 0) {
+    <div class="selection-bar">
+      <span>{{ selectedIngredients().length }} sélectionné{{ selectedIngredients().length > 1 ? 's' : '' }}</span>
+      <button (click)="clearSelection.emit()">Tout effacer</button>
+    </div>
+  }
+
+  <ul class="ingredient-list">
+    @for (name of filteredIngredients(); track name) {
+      <li>
+        <button
+          class="ingredient-item"
+          [class.selected]="selectedSet().has(name)"
+          (click)="ingredientToggle.emit(name)"
+        >
+          <span class="ingredient-name">{{ name }}</span>
+          <span class="ingredient-count">{{ recipeCountByIngredient().get(name) }}</span>
+        </button>
+      </li>
+    } @empty {
+      <li class="no-result">Aucun ingrédient trouvé.</li>
+    }
+  </ul>
+</div>

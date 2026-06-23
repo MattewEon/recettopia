@@ -110,7 +110,7 @@ const AJITSUKE_TAMAGO: RecipeCard = recipe({
       ["Gousses d'ail hachées", '4'],
       ['Vinaigre', '2 c.café'],
       ['Glutamate (optionnel)', '1 pincée'],
-      ['Green onions (optionnels)', '1-2 branches'],
+      ['Green onions (optionnels)', '1-2 branches', 'Cébette'],
     ]),
 
     steps([
