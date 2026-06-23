@@ -21,7 +21,7 @@ header {
     color: var(--soft);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 9vw, 4rem);
     margin-bottom: 16px;
   }
 
