@@ -5,7 +5,21 @@
   (click)="toggleToc()"
 >☰</button>
 
+<button
+  class="ingredient-index-toggle"
+  aria-label="Index des ingrédients"
+  [attr.aria-expanded]="ingredientIndexOpen()"
+  [class.has-selection]="selectedIngredients().length > 0"
+  (click)="toggleIngredientIndex()"
+>
+  🥕
+  @if (selectedIngredients().length > 0) {
+    <span class="ingredient-badge">{{ selectedIngredients().length }}</span>
+  }
+</button>
+
 <div class="toc-backdrop" (click)="closeToc()"></div>
+<div class="ingredient-backdrop" (click)="closeIngredientIndex()"></div>
 
 <app-toc
   [sections]="sections"
@@ -13,6 +27,15 @@
   [activeFilters]="activeFilters()"
   (linkClicked)="closeToc()"
   (clearFiltersAndGo)="clearFiltersAndGo($event)"
+/>
+
+<app-ingredient-index
+  [sections]="sections"
+  [open]="ingredientIndexOpen()"
+  [selectedIngredients]="selectedIngredients()"
+  (ingredientToggle)="toggleIngredient($event)"
+  (clearSelection)="clearIngredients()"
+  (close)="closeIngredientIndex()"
 />
 
 <header>
@@ -26,6 +49,11 @@
 
 <main>
   @for (section of sections; track $index) {
-    <app-recipe-section [section]="section" [sectionIndex]="$index" [activeFilters]="activeFilters()" />
+    <app-recipe-section
+      [section]="section"
+      [sectionIndex]="$index"
+      [activeFilters]="activeFilters()"
+      [selectedIngredients]="selectedIngredients()"
+    />
   }
 </main>

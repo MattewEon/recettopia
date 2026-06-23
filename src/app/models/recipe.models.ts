@@ -14,6 +14,7 @@ export type Label = 'vegetarien' | 'sans-gluten' | 'sans-lactose' | 'lactose-red
 export interface IngredientItem {
   name: string;
   qty: string;
+  key?: string;
 }
 
 export interface StepItem {
