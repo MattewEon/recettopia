@@ -68,7 +68,7 @@ const BISCUITS_ORANGE: RecipeCard = {
       ["Pelures d'orange", '1'],
       ['Sucre', '150 g'],
       ['Margarine végétale', '85 g'],
-      ['Œuf', '1'],
+      ['Œufs', '1'],
       ['Farine', '280 g'],
       ['Levure chimique', '½ sachet'],
       ['Sel', '1 pincée'],
@@ -107,7 +107,7 @@ const MINI_COOKIES_EXPRESS_AMANDE: RecipeCard = {
   groups: [
     ingredients([
       ["Poudre d'amande", '125 g'],
-      ['Compote de pommes sans sucre ajouté', '100 g'],
+      ['Compote de pommes sans sucre ajouté', '100 g', 'Compote'],
       ['Pépites de chocolat noir', 'q.s.'],
     ]),
     steps([
@@ -139,7 +139,7 @@ const BISCUITS_NOISETTE_COMPOTE_CHOCOLAT: RecipeCard = {
   groups: [
     ingredients([
       ['Poudre de noisette', '60 g'],
-      ['Compote de pommes', '2 càs'],
+      ['Compote de pommes', '2 càs', 'Compote'],
       ['Chocolat noir', 'q.s.'],
       ['Noisettes entières', 'q.s.'],
     ]),
@@ -169,8 +169,8 @@ const CLAFOUTIS_NECTARINES: RecipeCard = {
       ['Nectarines', '5 à 6'],
       ['Œufs', '3'],
       ['Sucre', '80 g'],
-      ['Farine de riz ou maïzena', '50 g'],
-      ["Crème de coco ou lait d'amande", '200 ml'],
+      ['Farine de riz', '50 g'],
+      ['Crème de coco', '200 ml'],
       ['Vanille', '1 càc'],
       ['Sel', '1 pincée'],
       ['Huile de coco', 'q.s.'],
@@ -197,7 +197,7 @@ const TARTE_MIRABELLES_SPECULOOS: RecipeCard = {
       ['Mirabelles', '500 à 700 g'],
       ['Spéculoos', '8 à 10'],
       ["Poudre d'amande", '50 à 80 g'],
-      ['Amandes effilées', '1 poignée'],
+      ['Amandes effilées', '1 poignée', 'Amandes'],
       ['Sucre vanillé', '1 sachet'],
     ]),
     steps([
@@ -223,7 +223,7 @@ const MUFFINS_NUTELLA: RecipeCard = {
     ingredients([
       ['Farine', '300 g (375)'],
       ["Poudre d'amande", '100 g (125)'],
-      ['Sucre blanc', '170 g (200)'],
+      ['Sucre blanc', '170 g (200)', 'Sucre'],
       ['Sucre roux', '30 g (50)'],
       ['Sel', '1 pincée'],
       ['Levure chimique', '1 sachet (1,25)'],
@@ -278,7 +278,7 @@ const SPRITZ_COCO: RecipeCard = {
   labels: ['vegetarien', 'sans-lactose'],
   groups: [
     ingredients([
-      ['Sucre fin', '300 g'],
+      ['Sucre fin', '300 g', 'Sucre'],
       ['Noix de coco râpée', '150 g'],
       ['Farine', '1 kg'],
       ['Margarine végétale', '800 g'],
@@ -309,7 +309,7 @@ const MARBRE_CHOCOLAT: RecipeCard = {
       ['Margarine végétale', '120 g'],
       ['Farine', '230 g'],
       ['Levure chimique', '1 sachet'],
-      ['Cacao en poudre', 'q.s.'],
+      ['Cacao', 'q.s.'],
       ['Lait végétal', 'q.s.'],
       ["Arôme d'amande amère", '1 càc'],
       ['Sel', '1 pincée'],
@@ -334,7 +334,7 @@ const GATEAU_HARICOT_ROUGE_CHOCOLAT: RecipeCard = {
       ['Haricots rouges cuits', '425 g', 'Haricots rouges'],
       ['Œufs', '4'],
       ["Poudre d'amande", '85 g'],
-      ['Cacao non sucré', '68 g'],
+      ['Cacao', '68 g'],
       ["Sirop d'érable", '170 g'],
       ['Chocolat noir', '1 tablette'],
     ]),

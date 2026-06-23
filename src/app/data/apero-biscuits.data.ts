@@ -14,8 +14,9 @@ const CAKE_SALE = recipe({
         ['Levure chimique', '1 sachet'],
         ['Œufs', '3'],
         ['Huile', '100 ml'],
-        ['Lait chaud', '100 ml'],
-        ['Sel, poivre', '1 pincée'],
+        ['Lait', '100 ml'],
+        ['Sel', '1 pincée'],
+        ['Poivre', '1 pincée'],
       ],
       'Base',
     ),
@@ -57,7 +58,7 @@ const PAIN_LENTILLES_CORAIL = recipe({
   groups: [
     ingredients([
       ['Lentilles corail', '250 g'],
-      ['Œuf', '1'],
+      ['Œufs', '1'],
       ['Eau', '15 cl'],
       ["Huile d'olive", '2 càs'],
       ['Levure chimique', '10 g'],
@@ -97,11 +98,12 @@ const SALADE_CONCOMBRE_CHEVRE_CORIANDRE_SESAME = recipe({
     ingredients([
       ['Concombre', '1'],
       ['Chèvre frais', '100 g'],
-      ['Coriandre fraîche (feuilles)', '1 càc'],
+      ['Coriandre fraîche (feuilles)', '1 càc', 'Coriandre'],
       ['Graines de sésame (toastées de préférence)', '1 càc'],
       ["Huile d'olive", '2 càc'],
       ['Jus de citron', '1 càc'],
-      ['Sel, poivre', 'q.s.'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
     ]),
     steps([
       [

@@ -76,8 +76,8 @@ const TARTINADE_TOFU_BASILIC_OLIVES: RecipeCard = recipe({
       ['Tofu nature', '200 g'],
       ['Olives vertes ou noires dénoyautées', '80 à 100 g'],
       ['Amandes', '30 g'],
-      ['Ail confit', '2 à 4 gousses'],
-      ['Basilic frais', '1 poignée'],
+      ['Ail confit', '2 à 4 gousses', 'Ail'],
+      ['Basilic frais', '1 poignée', 'Basilic'],
       ["Huile d'olive", '1 à 2 càs'],
       ['Jus de citron', '1 càs'],
       ['Poivre', 'q.s.'],
@@ -104,10 +104,10 @@ const AJITSUKE_TAMAGO: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Œufs', '6'],
-      ['Eau tiède', '15 cl'],
+      ['Eau tiède', '15 cl', 'Eau'],
       ['Sucre', '60 ml (1/4 cup)'],
       ['Sauce soja', '80 ml (1/3 cup)'],
-      ["Gousses d'ail hachées", '4'],
+      ["Gousses d'ail hachées", '4', 'Ail'],
       ['Vinaigre', '2 c.café'],
       ['Glutamate (optionnel)', '1 pincée'],
       ['Green onions (optionnels)', '1-2 branches', 'Cébette'],

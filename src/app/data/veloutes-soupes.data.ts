@@ -12,12 +12,13 @@ const VELOUTE_CAROTTES: RecipeCard = recipe({
     ingredients([
       ['Carottes', '~500 g'],
       ['Oignon', '½'],
-      ['Bouillon de poule', '1 cube'],
+      ['Bouillon de poule', '1 cube', 'Bouillon'],
       ['Beurre', '1 morceau'],
-      ['Curry + cumin', '½ càc chacun (~)'],
-      ['Crème fraîche légère', '2 càs'],
+      ['Curry', '½ càc (~)'],
+      ['Cumin', '½ càc (~)'],
+      ['Crème fraîche légère', '2 càs', 'Crème fraîche'],
       ['Vache qui rit', '2'],
-      ['Sel de Guérande (optionnel)', '1 pincée'],
+      ['Sel de Guérande (optionnel)', '1 pincée', 'Sel'],
       ['Miel (option sucré-salé)', '1 càc'],
     ]),
     steps([
@@ -42,14 +43,15 @@ const CREME_PETIT_POIS_JAUNE_OEUF_CONFIT: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Petits pois', '300 g'],
-      ['Crème de soja liquide', '10 à 15 cl'],
-      ['Jaunes d’œufs', '2 à 4'],
-      ['Sauce soja salée', 'q.s.'],
-      ['Gingembre frais ou en poudre', 'q.s.'],
+      ['Crème de soja liquide', '10 à 15 cl', 'Crème de soja'],
+      ["Jaune d'œuf", '2 à 4'],
+      ['Sauce soja salée', 'q.s.', 'Sauce soja'],
+      ['Gingembre frais', 'q.s.'],
       ['Huile de sésame', '1 càc'],
-      ['Graines de sésame', 'q.s.'],
+      ['Graines de sésame', 'q.s.', 'Sésame'],
       ['Curcuma', '1 pincée'],
-      ['Sel, poivre', 'q.s.'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
     ]),
     steps([
       [
@@ -95,7 +97,7 @@ const VELOUTE_CHOUFLEUR: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Chou-fleur', '1 kg'],
-      ['Bouillon cube légumes/poule', '1'],
+      ['Bouillon cube légumes/poule', '1', 'Bouillon'],
       ["Huile d'olive", 'généreusement'],
       ['Crème fraîche', '2 càs'],
       ['Vache qui rit', '3'],
@@ -119,8 +121,8 @@ const VELOUTE_COURGETTES: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Courgettes', '1–2 / personne'],
-      ['Basilic frais', 'généreusement'],
-      ['Crème fraîche épaisse légère', 'q.s.'],
+      ['Basilic frais', 'généreusement', 'Basilic'],
+      ['Crème fraîche épaisse légère', 'q.s.', 'Crème fraîche'],
       ['Vache qui rit', '1 / personne'],
     ]),
     steps([
@@ -141,11 +143,12 @@ const VELOUTE_POTIMARRON: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Potimarron', '1'],
-      ['Bouillon cube de poule', '1'],
+      ['Bouillon cube de poule', '1', 'Bouillon'],
       ['Muscade', 'q.s.'],
-      ['Crème liquide légère', 'q.s.'],
+      ['Crème liquide légère', 'q.s.', 'Crème liquide'],
       ['Vache qui rit', '1 / personne'],
-      ['Persil, Maggi', 'q.s.'],
+      ['Persil', 'q.s.'],
+      ['Maggi', 'q.s.'],
     ]),
     steps([
       ['Cuire', "Cuire le potimarron avec bouillon et muscade. L'eau ne dépasse pas les légumes."],
@@ -164,11 +167,11 @@ const VELOUTE_BUTTERNUT_COCO: RecipeCard = recipe({
   groups: [
     ingredients([
       ['Butternut', '1'],
-      ['Bouillon cube', '1'],
+      ['Bouillon cube', '1', 'Bouillon'],
       ['Curry', 'selon goût'],
       ['Lait de coco', '1 boîte'],
       ['Vache qui rit', '3'],
-      ['Crème épaisse légère', '4 càs'],
+      ['Crème épaisse légère', '4 càs', 'Crème fraîche'],
     ]),
     steps([
       ['Cuire', 'Cuire la butternut avec bouillon et curry.'],
@@ -185,14 +188,14 @@ const VELOUTE_POIVRON_CHORIZO: RecipeCard = recipe({
   desc: 'Relevé · Option Nduja',
   groups: [
     ingredients([
-      ['Poivrons rouges', '4'],
+      ['Poivrons rouges', '4', 'Poivrons'],
       ['Tomates pelées', '1–2 boîtes'],
       ['Oignon', '½'],
       ['Paprika', 'q.s.'],
       ['Chorizo (ou Nduja)', 'selon goût'],
       ['Vache qui rit', '2'],
       ['Crème fraîche', '4 càs'],
-      ['Rondelles chorizo', 'q.s.'],
+      ['Rondelles chorizo', 'q.s.', 'Chorizo'],
     ]),
     steps([
       ['Cuire', 'Cuire poivrons, tomates, oignon et paprika.'],
