@@ -21,6 +21,8 @@ export class AppComponent {
   activeFilters = signal<string[]>([]);
   ingredientIndexOpen = signal(false);
   selectedIngredients = signal<string[]>([]);
+  fridgeMode = signal(false);
+  alwaysExcluded = signal<string[]>([]);
 
   toggleFilter(id: string): void {
     if (id === 'all') {
