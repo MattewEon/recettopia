@@ -1,8 +1,29 @@
 <div class="ingredient-index">
   <div class="heading-row">
-    <p class="heading">Index des ingrédients</p>
+    <p class="heading">{{ fridgeMode() ? 'Mon frigo' : 'Index des ingrédients' }}</p>
     <button class="close-btn" (click)="close.emit()" aria-label="Fermer">×</button>
   </div>
+
+  <div class="mode-tabs">
+    <button [class.active]="!fridgeMode()" (click)="toggleFridgeMode(false)">Index</button>
+    <button [class.active]="fridgeMode()" (click)="toggleFridgeMode(true)">Mon frigo</button>
+  </div>
+
+  @if (fridgeMode()) {
+    <div class="always-available">
+      <p class="always-available-label">Toujours disponibles</p>
+      <div class="always-available-chips">
+        @for (name of alwaysAvailable; track name) {
+          <button
+            class="chip"
+            [class.excluded]="excludedAlways().has(name)"
+            (click)="toggleAlways(name)"
+            [attr.aria-pressed]="!excludedAlways().has(name)"
+          >{{ name }}</button>
+        }
+      </div>
+    </div>
+  }
 
   <div class="search-box">
     <input
@@ -19,7 +40,7 @@
 
   @if (selectedIngredients().length > 0) {
     <div class="selection-bar">
-      <span>{{ selectedIngredients().length }} sélectionné{{ selectedIngredients().length > 1 ? 's' : '' }}</span>
+      <span>{{ selectedIngredients().length }} {{ fridgeMode() ? 'dans le frigo' : (selectedIngredients().length > 1 ? 'sélectionnés' : 'sélectionné') }}</span>
       <button (click)="clearSelection.emit()">Tout effacer</button>
     </div>
   }

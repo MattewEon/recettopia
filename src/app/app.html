@@ -36,6 +36,8 @@
   (ingredientToggle)="toggleIngredient($event)"
   (clearSelection)="clearIngredients()"
   (close)="closeIngredientIndex()"
+  (fridgeModeChange)="fridgeMode.set($event)"
+  (alwaysExcludedChange)="alwaysExcluded.set($event)"
 />
 
 <header>
@@ -54,6 +56,8 @@
       [sectionIndex]="$index"
       [activeFilters]="activeFilters()"
       [selectedIngredients]="selectedIngredients()"
+      [fridgeMode]="fridgeMode()"
+      [alwaysExcluded]="alwaysExcluded()"
     />
   }
 </main>

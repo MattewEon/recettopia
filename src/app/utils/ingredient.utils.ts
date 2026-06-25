@@ -1,5 +1,13 @@
 import { IngredientItem, RecipeCard } from '../models/recipe.models';
 
+export const ALWAYS_AVAILABLE: ReadonlySet<string> = new Set([
+  'Sel',
+  'Poivre',
+  'Eau',
+  'Huile',
+  'Sucre',
+]);
+
 export function canonicalIngredient(name: string): string {
   return name.replace(/\s*\([^)]*\)/g, '').trim();
 }

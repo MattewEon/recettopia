@@ -1,6 +1,6 @@
 import { Component, computed, input, output, signal } from '@angular/core';
 import { RecipeSection } from '../../models/recipe.models';
-import { cardIngredientNames } from '../../utils/ingredient.utils';
+import { ALWAYS_AVAILABLE, cardIngredientNames } from '../../utils/ingredient.utils';
 
 @Component({
   selector: 'app-ingredient-index',
@@ -16,9 +16,29 @@ export class IngredientIndexComponent {
   ingredientToggle = output<string>();
   clearSelection = output<void>();
   close = output<void>();
+  fridgeModeChange = output<boolean>();
+  alwaysExcludedChange = output<string[]>();
 
   searchQuery = signal('');
+  fridgeMode = signal(false);
+  excludedAlways = signal<Set<string>>(new Set());
   selectedSet = computed(() => new Set(this.selectedIngredients()));
+
+  readonly alwaysAvailable = [...ALWAYS_AVAILABLE];
+
+  toggleFridgeMode(value: boolean): void {
+    this.fridgeMode.set(value);
+    this.fridgeModeChange.emit(value);
+  }
+
+  toggleAlways(name: string): void {
+    this.excludedAlways.update(current => {
+      const next = new Set(current);
+      next.has(name) ? next.delete(name) : next.add(name);
+      this.alwaysExcludedChange.emit([...next]);
+      return next;
+    });
+  }
 
   private ingredientStats = computed(() => {
     const names = new Set<string>();
@@ -34,13 +54,22 @@ export class IngredientIndexComponent {
     return { names: [...names].sort((a, b) => a.localeCompare(b, 'fr')), counts };
   });
 
-  allIngredients = computed(() => this.ingredientStats().names);
+  allIngredients = computed(() =>
+    this.ingredientStats().names.filter(n => !ALWAYS_AVAILABLE.has(n)),
+  );
   recipeCountByIngredient = computed(() => this.ingredientStats().counts);
 
   filteredIngredients = computed(() => {
     const query = normalize(this.searchQuery());
-    if (!query) return this.allIngredients();
-    return this.allIngredients().filter(name => normalize(name).includes(query));
+    const list = query
+      ? this.allIngredients().filter(name => normalize(name).includes(query))
+      : this.allIngredients();
+
+    if (this.fridgeMode()) {
+      const counts = this.recipeCountByIngredient();
+      return [...list].sort((a, b) => (counts.get(b) ?? 0) - (counts.get(a) ?? 0));
+    }
+    return list;
   });
 }
 
