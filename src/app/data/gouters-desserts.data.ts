@@ -185,6 +185,38 @@ const CLAFOUTIS_NECTARINES: RecipeCard = {
   ],
   notes: notes([['Astuce', 'Ajouter du citron.']]),
 };
+const CLAFOUTIS_CERISES: RecipeCard = ({
+  theme : "plum",
+  emoji: '🍒',
+  tag: 'Four · 180°C · 35–40 min · Pour 4 à 6',
+  title: 'Clafoutis de cerises',
+  desc: 'Sans gluten · Sans lactose · Fruits fondants & amandes grillées',
+  groups: [
+    ingredients([
+      ['Cerises (de préférence dénoyautées)', '500 à 600 g'],
+      ['Œufs', '3'],
+      ['Sucre', '80 g'],
+      ['Farine de riz ou maïzena', '50 g'],
+      ["Lait d'amande", '200 ml'],
+      ['Arôme vanille ou sucre vanillé', '1 càc'],
+      ['Amandes effilées', '40 g'],
+      ['Sel', '1 pincée'],
+      ['Huile de coco (moule)', 'q.s.'],
+    ]),
+    steps([
+      ['Four', 'Préchauffer le four à 180°C.'],
+      ['Fruits', 'Répartir les cerises dans un moule huilé.'],
+      ['Appareil', 'Battre les œufs avec le sucre jusqu’à obtenir un mélange légèrement mousseux.'],
+      ['Mélange', 'Ajouter la farine, le lait d’amande, la vanille, le sel et la moitié des amandes effilées.'],
+      ['Assemblage', 'Verser l’appareil sur les cerises puis parsemer le reste des amandes effilées sur le dessus.'],
+      ['Cuisson', 'Cuire 35 à 40 min jusqu’à ce que le clafoutis soit doré et légèrement tremblotant au centre.'],
+    ]),
+  ],
+  notes: notes([
+    ['Astuce :', 'Les amandes effilées sur le dessus grillent légèrement à la cuisson et apportent du croquant.'],
+    ['Variante :', 'Fonctionne avec des cerises fraîches ou surgelées. Les dénoyauter reste plus agréable à la dégustation.'],
+  ]),
+});
 const TARTE_MIRABELLES_SPECULOOS: RecipeCard = {
   theme: 'caramel',
   emoji: '🫐',
@@ -357,6 +389,7 @@ export const GOUTERS_DESSERTS: RecipeSection = {
     MINI_COOKIES_EXPRESS_AMANDE,
     BISCUITS_NOISETTE_COMPOTE_CHOCOLAT,
     CLAFOUTIS_NECTARINES,
+    CLAFOUTIS_CERISES,
     TARTE_MIRABELLES_SPECULOOS,
     MUFFINS_NUTELLA,
     SNICKERS_MAISON_BANANE_CACAHUETE,

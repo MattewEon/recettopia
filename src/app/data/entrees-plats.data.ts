@@ -225,6 +225,38 @@ const FLAN_POIREAU_SAUMON: RecipeCard = recipe({
   notes: notes([
     ['Conservation :', '2 jours max au réfrigérateur.'],
     ['Astuce texture :', 'Ajouter un œuf pour plus de fermeté.'],
+    ['Astuce :', 'Pour les plus carnivores, on peut aisément remplacer le saumon fumé par des lardons. On préférera alors de la persillade à l’aneth.'],
+
+  ]),
+});
+const FLAN_COURGETTES_SAUMON_FUME_FETA: RecipeCard = recipe({
+  theme: 'teal',
+  emoji: '🥒',
+  tag: 'Four · 180°C · 25–30 min · Pour 4',
+  title: 'Flan courgettes-saumon fumé-feta',
+  desc: 'Sans pâte · Façon lasagnes · Fondant',
+  groups: [
+    ingredients([
+      ['Courgettes', '2 à 3'],
+      ['Saumon fumé', '200 g'],
+      ['Feta', '150 g'],
+      ['Œufs', '4'],
+      ['Crème végétale', '200 ml'],
+      ["Huile d'olive", 'q.s.'],
+      ['Aneth', 'q.s.'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
+    ]),
+    steps([
+      ['Courgettes', 'Couper les courgettes en fines lamelles et les faire revenir quelques minutes pour éliminer leur excès d’eau.'],
+      ['Appareil', 'Battre les œufs avec la crème, l’aneth, le poivre et une pincée de sel.'],
+      ['Montage', 'Monter le flan en alternant des couches de courgettes, mélangées à de la feta émiettée et l’appareil, couvrir de saumon fumé, et répéter à la manière de lasagnes.'],
+      ['Cuisson', 'Enfourner à 180°C pendant 25 à 30 min, jusqu’à ce que le flan soit pris et légèrement doré.'],
+    ]),
+  ],
+  notes: notes([
+    ['Point clé :', 'Bien faire dégorger les courgettes avant le montage pour éviter un flan trop humide.'],
+    ['Astuce :', 'Un zeste de citron juste avant de servir apporte une touche de fraîcheur qui se marie très bien avec le saumon fumé.'],
   ]),
 });
 const FLAN_THON_TOMATES_ORIGAN: RecipeCard = recipe({
@@ -264,6 +296,70 @@ const FLAN_THON_TOMATES_ORIGAN: RecipeCard = recipe({
     ['Astuce :', 'Basilic possible à la place de l’origan.'],
   ]),
 });
+const FLAN_MAQUEREAUX_TOMATES: RecipeCard = recipe({
+  theme: 'plum',
+  emoji: '🐟',
+  tag: 'Four · 180°C · 25–30 min · Pour 4',
+  title: 'Flan maquereaux-tomates',
+  desc: 'Sans pâte · Fondant · Saveurs méditerranéennes',
+  groups: [
+    ingredients([
+      ['Maquereaux au naturel', '2 boîtes'],
+      ['Tomates', '3 à 4'],
+      ['Feta ou chèvre', '150 g'],
+      ['Œufs', '4'],
+      ['Crème végétale', '200 ml'],
+      ["Huile d'olive", 'q.s.'],
+      ['Jus de citron', '1 trait'],
+      ['Persillade', 'q.s.'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
+    ]),
+    steps([
+      ['Tomates', "Épépiner les tomates puis les faire revenir pour éliminer leur excès d'eau."],
+      ['Maquereaux', 'Égoutter et émietter les maquereaux.'],
+      ['Appareil', 'Battre les œufs avec la crème, le jus de citron, la persillade, le sel et le poivre.'],
+      ['Mélange', 'Incorporer les tomates et les maquereaux.'],
+      ['Montage', 'Ajouter la feta émiettée.'],
+      ['Cuisson', '180°C pendant 25–30 min.'],
+    ]),
+  ],
+  notes: notes([
+    ['Astuce :', "Un trait de jus de citron apporte de la fraîcheur et équilibre parfaitement le goût du maquereau."],
+    ['Point clé :', "Bien faire réduire les tomates avant de les incorporer pour éviter un flan trop humide."],
+  ]),
+});
+const FLAN_TOMATES_LARDONS_OLIVES: RecipeCard = recipe({
+  theme:"ink",
+  emoji: '🍅',
+  tag: 'Four · 180°C · 25–30 min · Pour 4',
+  title: 'Flan tomates-lardons-olives',
+  desc: 'Sans pâte · Estival · Savoureux & légèrement fumé',
+  groups: [
+    ingredients([
+      ['Tomates', '3 à 4'],
+      ['Lardons', '150 à 200 g'],
+      ['Olives (noires ou vertes)', 'q.s.'],
+      ['Œufs', '4'],
+      ['Crème végétale', '200 ml'],
+      ["Huile d'olive", 'q.s.'],
+      ['Basilic ou persillade', 'q.s.'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
+    ]),
+    steps([
+      ['Tomates', 'Couper et faire revenir les tomates quelques minutes pour retirer l’excès d’eau.'],
+      ['Lardons', 'Faire revenir les lardons jusqu’à légère coloration puis réserver.'],
+      ['Appareil', 'Battre les œufs avec la crème, le sel, le poivre et les herbes.'],
+      ['Mélange', 'Incorporer les tomates et les lardons.'],
+      ['Montage', 'Ajouter les olives puis verser dans un plat huilé.'],
+      ['Cuisson', 'Cuire à 180°C pendant 25 à 30 min jusqu’à ce que le flan soit pris et doré.'],
+    ]),
+  ],
+  notes: notes([
+    ['Astuce :', 'Les tomates apportent une vraie fraîcheur qui équilibre le côté fumé des lardons, parfait en été.'],
+  ]),
+});
 const FLAN_EPINARDS_CHEVRE: RecipeCard = recipe({
   theme: 'green',
   emoji: '🧀',
@@ -292,6 +388,36 @@ const FLAN_EPINARDS_CHEVRE: RecipeCard = recipe({
     ]),
   ],
   notes: notes([['Point clé :', 'Essorage indispensable pour la tenue du flan.']]),
+});
+const FLAN_ASPERGES_FETA: RecipeCard = recipe({
+  theme: 'green',
+  emoji: '🌿',
+  tag: 'Four · 180°C · 25–30 min · Pour 4',
+  title: 'Flan asperges-feta',
+  desc: 'Sans pâte · Fondant · Asperges & feta',
+  groups: [
+    ingredients([
+      ['Asperges (fraîches ou en boîte)', '400 à 500 g'],
+      ['Feta', '150 g'],
+      ['Œufs', '4'],
+      ['Crème végétale', '200 ml'],
+      ['Margarine', 'q.s.'],
+      ['Ail (optionnel)', '1 gousse', 'Ail'],
+      ['Sel', 'q.s.'],
+      ['Poivre', 'q.s.'],
+      ['Muscade', 'q.s.'],
+    ]),
+    steps([
+      ['Asperges', "Faire revenir les asperges dans un peu de margarine pour éliminer leur excès d'humidité."],
+      ['Appareil', 'Battre les œufs avec la crème, le sel, le poivre et la muscade. Ajouter l’ail si besoin.'],
+      ['Mélange', 'Incorporer les asperges puis la feta émiettée.'],
+      ['Cuisson', 'Verser dans un moule huilé et cuire 25–30 min à 180°C.'],
+    ]),
+  ],
+  notes: notes([
+    ['Astuce :', "La feta à l'ail est idéale. Sinon, ajouter une gousse d'ail à l'appareil."],
+    ['Variante :', 'Fonctionne aussi bien avec des asperges fraîches que des asperges en boîte bien égouttées.'],
+  ]),
 });
 const FLAN_PATATE_DOUCE_ROQUEFORT: RecipeCard = recipe({
   theme: 'terracotta',
@@ -325,6 +451,7 @@ const FLAN_PATATE_DOUCE_ROQUEFORT: RecipeCard = recipe({
   notes: notes([
     ['Astuce :', 'Thym/romarin renforcent la douceur.'],
     ['Remarque :', 'Sans lactose si Roquefort remplacé.'],
+    ['Astuce :', 'On peut aussi ajouter des carottes râpées au flan pour twister la recette.'],
   ]),
 });
 const PITA_POULET_BLAISE: RecipeCard = recipe({
@@ -836,8 +963,12 @@ export const ENTREES_PLATS: RecipeSection = {
     TARTE_CROUSTILLANTE_THON_CONCOMBRE,
     TOURTE_ROQUEFORT,
     FLAN_POIREAU_SAUMON,
+    FLAN_COURGETTES_SAUMON_FUME_FETA,
     FLAN_THON_TOMATES_ORIGAN,
+    FLAN_MAQUEREAUX_TOMATES,
+    FLAN_TOMATES_LARDONS_OLIVES,
     FLAN_EPINARDS_CHEVRE,
+    FLAN_ASPERGES_FETA,
     FLAN_PATATE_DOUCE_ROQUEFORT,
     PITA_POULET_BLAISE,
     CHILI_CON_SIN_CARNE_EASY,
